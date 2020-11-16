@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header page__header--positioning-form page-header wrapper">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__picture" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
+        <img class="logo__text" src="https://via.placeholder.com/101x18"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+      </a>
+      <button class="page-header__nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню навигации</span>
+      </button>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main form-page-main">
+      <h1 class="page-main__title form-page-main__title wrapper">Подбор программы</h1>
+      <p class="form-page-main__text wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="form-page-main__form pick-up-programm-form" action="#" method="POST">
+        <fieldset class="pick-up-programm-form__cat-info-fieldset fieldset-cat-info">
+          <label class="fieldset-cat-info__label wrapper">
+            <span class="fieldset-cat-info__text">Имя:*</span>
+            <input class="fieldset-cat-info__input" type="text" value="Барсик">
+          </label>
+          <label class="fieldset-cat-info__label wrapper">
+            <span class="fieldset-cat-info__text">Вес (кг):*</span>
+            <input class="fieldset-cat-info__input" type="number" value="7">
+          </label>
+          <label class="fieldset-cat-info__label wrapper">
+            <span class="fieldset-cat-info__text">Возраст (лет):</span>
+            <input class="fieldset-cat-info__input" type="number" value="7">
+          </label>
+        </fieldset>
+        <fieldset class="pick-up-programm-form__purposes-fieldset fieldset-cat-purposes wrapper">
+          <label class="fieldset-cat-purposes__checkbox wrapper">
+            <input class="visually-hidden" type="checkbox" checked>
+            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+            <span class="fieldset-cat-purposes__text">Похудение</span>
+          </label>
+          <label class="fieldset-cat-purposes__checkbox wrapper">
+            <input class="visually-hidden" type="checkbox" checked>
+            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+            <span class="fieldset-cat-purposes__text">Набор массы</span>
+          </label>
+          <label class="fieldset-cat-purposes__checkbox wrapper">
+            <input class="visually-hidden" type="checkbox" checked>
+            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+            <span class="fieldset-cat-purposes__text">Не знаю (Нужен ваш совет)</span>
+          </label>
+        </fieldset>
+        <fieldset class="pick-up-programm-form__owner-contacts-fieldset fieldset-owner-contacts">
+          <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
+          <lable class="fieldset-owner-contacts__label wrapper">
+            <span class="fieldset-owner-contacts__text">E-mail:*</span>
+            <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
+          </lable>
+          <lable class="fieldset-owner-contacts__label wrapper">
+            <span class="fieldset-owner-contacts__text">Телефон:*</span>
+            <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]\s([0-9]{3})\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          </lable>
+        </fieldset>
+        <fieldset class="pick-up-programm-form__comments-fieldset fieldset-comments">
+          <legend class="fieldset-comments__title">Комментарий</legend>
+          <textarea class="fieldset-comments__input" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__contacts contacts-page-footer">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-page-footer__wrapper">
+          <p class="contacts-page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts-page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <iframe class="contacts-page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+      <div class="page-footer__secondary wrapper">
+        <a class="page-footer__logo logo">
+          <img class="logo__text" src="https://via.placeholder.com/101x18" width="128" height="24" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+        </a>
+        <ul class="page-footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+        <p class="page-footer__logo-academy academy-logo">
+          <a class="academy-logo__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="academy-logo__picture" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML академии в виде академической шапки.">
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
