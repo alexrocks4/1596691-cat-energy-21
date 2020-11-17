@@ -15,14 +15,14 @@
       </button>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -34,49 +34,69 @@
         <fieldset class="pick-up-programm-form__cat-info-fieldset fieldset-cat-info">
           <label class="fieldset-cat-info__label wrapper">
             <span class="fieldset-cat-info__text">Имя:*</span>
-            <input class="fieldset-cat-info__input" type="text" value="Барсик">
+            <input class="fieldset-cat-info__input" type="text" name="name" value="Барсик" required>
           </label>
           <label class="fieldset-cat-info__label wrapper">
             <span class="fieldset-cat-info__text">Вес (кг):*</span>
-            <input class="fieldset-cat-info__input" type="number" value="7">
+            <input class="fieldset-cat-info__input" type="number" name="weight" value="7" required>
           </label>
           <label class="fieldset-cat-info__label wrapper">
             <span class="fieldset-cat-info__text">Возраст (лет):</span>
-            <input class="fieldset-cat-info__input" type="number" value="7">
+            <input class="fieldset-cat-info__input" type="number" name="age" value="7">
           </label>
         </fieldset>
         <fieldset class="pick-up-programm-form__purposes-fieldset fieldset-cat-purposes wrapper">
-          <label class="fieldset-cat-purposes__checkbox wrapper">
-            <input class="visually-hidden" type="checkbox" checked>
-            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+          <label class="fieldset-cat-purposes__label wrapper">
+            <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" checked>
             <span class="fieldset-cat-purposes__text">Похудение</span>
           </label>
-          <label class="fieldset-cat-purposes__checkbox wrapper">
-            <input class="visually-hidden" type="checkbox" checked>
-            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+          <label class="fieldset-cat-purposes__label wrapper">
+            <input class="visually-hidden" type="radio" name="purpose" value="weight-gain">
             <span class="fieldset-cat-purposes__text">Набор массы</span>
           </label>
-          <label class="fieldset-cat-purposes__checkbox wrapper">
-            <input class="visually-hidden" type="checkbox" checked>
-            <img class="fieldset-cat-purposes__img fieldset-cat-purposes__img--active" src="https://via.placeholder.com/30x30" width="30" height="30" alt="">
+          <label class="fieldset-cat-purposes__label wrapper">
+            <input class="visually-hidden" type="radio" name="purpose" value="unknown">
             <span class="fieldset-cat-purposes__text">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
         <fieldset class="pick-up-programm-form__owner-contacts-fieldset fieldset-owner-contacts">
           <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
-          <lable class="fieldset-owner-contacts__label wrapper">
+          <label class="fieldset-owner-contacts__label wrapper">
             <span class="fieldset-owner-contacts__text">E-mail:*</span>
             <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
-          </lable>
-          <lable class="fieldset-owner-contacts__label wrapper">
+          </label>
+          <label class="fieldset-owner-contacts__label wrapper">
             <span class="fieldset-owner-contacts__text">Телефон:*</span>
             <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]\s([0-9]{3})\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-          </lable>
+          </label>
         </fieldset>
         <fieldset class="pick-up-programm-form__comments-fieldset fieldset-comments">
           <legend class="fieldset-comments__title">Комментарий</legend>
           <textarea class="fieldset-comments__input" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
+        <fieldset class="pick-up-programm-form__extra-fieldset fieldset-extra">
+          <legend class="fieldset-extra__title">Дополнительно</legend>
+          <label class="fieldset-extra__label">
+            <input class="visually-hidden" type="checkbox" name="sweetener" value="true" checked>
+            <span class="fieldset-extra__text">Cахарозаменитель</span>
+          </label>
+          <label class="fieldset-extra__label">
+            <input class="visually-hidden" type="checkbox" name="drink-water" value="true">
+            <span class="fieldset-extra__text">Питьевая вода</span>
+          </label>
+          <label class="fieldset-extra__label">
+            <input class="visually-hidden" type="checkbox" name="milk" value="true">
+            <span class="fieldset-extra__text">Молоко</span>
+          </label>
+          <label class="fieldset-extra__label">
+            <input class="visually-hidden" type="checkbox" name="vitamins" value="true">
+            <span class="fieldset-extra__text">Витамины</span>
+          </label>
+        </fieldset>
+        <div class="pick-up-programm-form__submit-block wrapper">
+          <button class="pick-up-programm-form__submit button" type="submit">Отправить заявку</button>
+          <p class="pick-up-programm-form__required-text">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
@@ -89,7 +109,7 @@
         <iframe class="contacts-page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
       <div class="page-footer__secondary wrapper">
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo" href="index.html">
           <img class="logo__text" src="https://via.placeholder.com/101x18" width="128" height="24" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
         </a>
         <ul class="page-footer__socials socials">
