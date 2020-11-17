@@ -88,13 +88,13 @@
           </figure>
           <figcaption class="slider__title wrapper">
             <span class="visually-hidden">Коты до и после похудения</span>
-            <button class="slider__button-before" type="button">Было</button>
+            <button class="slider__button-before" type="button" aria-label="Показать фотографию кота до похудения">Было</button>
             <span class="slider__switch slider__switch--on"></span>
             <label class="slider__range">
-              <input class="visually-hidden" type="range">
+              <input class="visually-hidden" type="range" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Процент видимой части двух фотографий кота">
               <span class="slider__handle"></span>
             </label>
-            <button class="slider__button-after" type="button">Стало</button>
+            <button class="slider__button-after" type="button" aria-label="Показать фотографию кота после похудения">Стало</button>
           </figcaption>
         </figure>
       </section>
