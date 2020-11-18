@@ -7,8 +7,8 @@
   <body class="page__body">
     <header class="page__header page__header--positioning-form page-header wrapper">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__picture" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
-        <img class="logo__text" src="https://via.placeholder.com/101x18"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+        <img class="logo__picture" src="https://via.placeholder.com/34x38" width="34" height="38" aria-label="Логотип Cat Energy в виде картинки" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
+        <img class="logo__text" src="https://via.placeholder.com/101x18"  width="101" height="18" aria-label="Текстовый логотип Cat Energy" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
       </a>
       <button class="page-header__nav-toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
@@ -30,8 +30,8 @@
     <main class="page-main form-page-main">
       <h1 class="page-main__title form-page-main__title wrapper">Подбор программы</h1>
       <p class="form-page-main__text wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="form-page-main__form pick-up-programm-form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="pick-up-programm-form__cat-info-fieldset fieldset-cat-info">
+      <form class="form-page-main__form pick-up-program-form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="pick-up-program-form__cat-info-fieldset fieldset-cat-info">
           <label class="fieldset-cat-info__label wrapper">
             <span class="fieldset-cat-info__text">Имя:*</span>
             <input class="fieldset-cat-info__input" type="text" name="name" value="Барсик" required>
@@ -45,7 +45,7 @@
             <input class="fieldset-cat-info__input" type="number" name="age" value="7">
           </label>
         </fieldset>
-        <fieldset class="pick-up-programm-form__purposes-fieldset fieldset-cat-purposes wrapper">
+        <fieldset class="pick-up-program-form__purposes-fieldset fieldset-cat-purposes wrapper">
           <label class="fieldset-cat-purposes__label wrapper">
             <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" checked>
             <span class="fieldset-cat-purposes__text">Похудение</span>
@@ -59,7 +59,7 @@
             <span class="fieldset-cat-purposes__text">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
-        <fieldset class="pick-up-programm-form__owner-contacts-fieldset fieldset-owner-contacts">
+        <fieldset class="pick-up-program-form__owner-contacts-fieldset fieldset-owner-contacts">
           <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
           <label class="fieldset-owner-contacts__label wrapper">
             <span class="fieldset-owner-contacts__text">E-mail:*</span>
@@ -70,11 +70,11 @@
             <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
           </label>
         </fieldset>
-        <fieldset class="pick-up-programm-form__comments-fieldset fieldset-comments">
+        <fieldset class="pick-up-program-form__comments-fieldset fieldset-comments">
           <legend class="fieldset-comments__title">Комментарий</legend>
           <textarea class="fieldset-comments__input" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="pick-up-programm-form__extra-fieldset fieldset-extra">
+        <fieldset class="pick-up-program-form__extra-fieldset fieldset-extra">
           <legend class="fieldset-extra__title">Дополнительно</legend>
           <label class="fieldset-extra__label">
             <input class="visually-hidden" type="checkbox" name="sweetener" value="true" checked>
@@ -93,9 +93,9 @@
             <span class="fieldset-extra__text">Витамины</span>
           </label>
         </fieldset>
-        <div class="pick-up-programm-form__submit-block wrapper">
-          <button class="pick-up-programm-form__submit button" type="submit">Отправить заявку</button>
-          <p class="pick-up-programm-form__required-text">* — Обязательные поля</p>
+        <div class="pick-up-program-form__submit-block wrapper">
+          <button class="pick-up-program-form__submit button" type="submit">Отправить заявку</button>
+          <p class="pick-up-program-form__required-text">* — Обязательные поля</p>
         </div>
       </form>
     </main>
@@ -110,23 +110,23 @@
       </section>
       <div class="page-footer__secondary wrapper">
         <a class="page-footer__logo logo" href="index.html">
-          <img class="logo__text" src="https://via.placeholder.com/101x18" width="128" height="24" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+          <img class="logo__text" src="https://via.placeholder.com/101x18" width="128" height="24" aria-label="Логотип Cat Energy" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
         </a>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Вконтакте">Мы в Вконтакте</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм">Мы в Инстаграме</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук">Мы в Фейсбуке</a>
           </li>
         </ul>
         <p class="page-footer__logo-academy academy-logo">
           <a class="academy-logo__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="academy-logo__picture" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML академии в виде академической шапки.">
+            <img src="https://via.placeholder.com/27x34" width="27" height="34" aria-label="Логотип HTML академии" alt="Логотип HTML академии в виде академической шапки.">
           </a>
         </p>
       </div>
