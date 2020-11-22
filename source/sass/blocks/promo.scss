@@ -1,0 +1,27 @@
+.promo {
+  outline: $outline-debug-contrast;
+  background-image: linear-gradient(to bottom, $color-primary-special-1 0, $color-primary-special-1 302px, $color-light-light 302px);
+  background-position: 0 0;
+}
+
+.promo__wrapper {
+  padding-top: 27px;
+  background-color: $color-primary;
+  background-image: linear-gradient(to bottom, $color-primary-dark 0, $color-primary-dark 302px, $color-light-light 302px),
+    url("../img/index-background-small.jpg");
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.promo__title {
+  @include header-reset;
+  line-height: 36px;
+  color: $color-light-light;
+  font-size: 36px;
+}
+
+.promo__text {
+  line-height: 14px;
+  color: $color-light-light;
+  font-size: 14px;
+}

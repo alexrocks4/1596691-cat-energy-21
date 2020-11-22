@@ -1,9 +1,25 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 //Global
-@import 'global/variables.scss';
-@import 'global/fonts.scss';
-
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
 
 //Blocks
-//@import "blocks/";
+@import "blocks/visually-hidden.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/academy-logo.scss";
+
+//Index specific page blocks
+@import "blocks/promo.scss";
+@import "blocks/features.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";

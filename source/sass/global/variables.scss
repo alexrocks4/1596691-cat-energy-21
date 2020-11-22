@@ -1,2 +1,26 @@
 //Colors
-$white: #FFFFFF;
+$color-primary: #68b738;
+$color-primary-dark: rgba(104, 183, 56, 0.85);
+$color-primary-special-1: #64a73c;
+
+$color-light: #f2f2f2;
+$color-light-light: #ffffff;
+$color-light-dark: #d9d9d9;
+$color-light-accent: #e6e6e6;
+$color-light-special-1: #eaeaea;
+$color-light-special-2: #cdcdcd;
+$color-light-special-3: #e7e7e7;
+$color-light-special-4: #ebebeb;
+$color-light-special-5: #d3d3d3;
+
+$color-dark: #444444;
+$color-dark-dark: #000000;
+$color-dark-accent: #111111;
+$color-dark-special-1: #222222;
+
+$color-outline: blue;
+$color-outline-contrast: red;
+
+//Outline
+$outline-debug: 3px solid $color-outline;
+$outline-debug-contrast: 3px solid $color-outline-contrast;

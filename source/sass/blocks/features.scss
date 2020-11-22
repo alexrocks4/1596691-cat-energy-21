@@ -1,0 +1,28 @@
+.features {
+  outline: $outline-debug;
+}
+
+.features__item {
+  background-color: $color-light;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.features__title {
+  @include header-reset;
+  text-transform: uppercase;
+  line-height: 37px;
+  font-size: 24px;
+}
+
+.features__text {
+  @include text-secondary;
+}
+
+.features__action {
+  @include link-reset;
+  text-transform: uppercase;
+  line-height: 16px;
+}

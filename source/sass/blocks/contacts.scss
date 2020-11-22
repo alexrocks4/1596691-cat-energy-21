@@ -1,0 +1,23 @@
+.contacts {
+  outline: $outline-debug-contrast;
+}
+
+.contacts_wrapper {
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
+
+.contacts__text {
+  text-transform: uppercase;
+  color: $color-dark-accent;
+}
+
+.contacts__address {
+  @include text-secondary;
+  line-height: 20px;
+}
+
+.contacts__map {
+  display: block;
+  border: none;
+}
