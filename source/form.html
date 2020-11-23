@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - подбор питания для котов</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page__header page__header--positioning-form page-header wrapper">
@@ -27,71 +28,83 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main form-page-main">
-      <h1 class="page-main__title form-page-main__title wrapper">Подбор программы</h1>
-      <p class="form-page-main__text wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <main class="page-main page-main--positioning-form form-page-main">
+      <div class="form-page-main__wrapper wrapper">
+        <h1 class="form-page-main__title">Подбор программы</h1>
+        <p class="form-page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="form-page-main__form pick-up-program-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="pick-up-program-form__cat-info-fieldset fieldset-cat-info">
-          <label class="fieldset-cat-info__label wrapper">
-            <span class="fieldset-cat-info__text">Имя:*</span>
-            <input class="fieldset-cat-info__input" type="text" name="name" value="Барсик" required>
-          </label>
-          <label class="fieldset-cat-info__label wrapper">
-            <span class="fieldset-cat-info__text">Вес (кг):*</span>
-            <input class="fieldset-cat-info__input" type="number" name="weight" value="7" required>
-          </label>
-          <label class="fieldset-cat-info__label wrapper">
-            <span class="fieldset-cat-info__text">Возраст (лет):</span>
-            <input class="fieldset-cat-info__input" type="number" name="age" value="7">
-          </label>
+          <div class="fieldset-cat-info__wrapper wrapper">
+            <label class="fieldset-cat-info__label">
+              <span class="fieldset-cat-info__text">Имя:*</span>
+              <input class="fieldset-cat-info__input" type="text" name="name" value="Барсик" required>
+            </label>
+            <label class="fieldset-cat-info__label">
+              <span class="fieldset-cat-info__text">Вес (кг):*</span>
+              <input class="fieldset-cat-info__input" type="number" name="weight" value="7" required>
+            </label>
+            <label class="fieldset-cat-info__label">
+              <span class="fieldset-cat-info__text">Возраст (лет):</span>
+              <input class="fieldset-cat-info__input" type="number" name="age" value="7">
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="pick-up-program-form__purposes-fieldset fieldset-cat-purposes wrapper">
-          <label class="fieldset-cat-purposes__label wrapper">
-            <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" checked>
-            <span class="fieldset-cat-purposes__text">Похудение</span>
-          </label>
-          <label class="fieldset-cat-purposes__label wrapper">
-            <input class="visually-hidden" type="radio" name="purpose" value="weight-gain">
-            <span class="fieldset-cat-purposes__text">Набор массы</span>
-          </label>
-          <label class="fieldset-cat-purposes__label wrapper">
-            <input class="visually-hidden" type="radio" name="purpose" value="unknown">
-            <span class="fieldset-cat-purposes__text">Не знаю (Нужен ваш совет)</span>
-          </label>
+        <fieldset class="pick-up-program-form__purposes-fieldset fieldset-cat-purposes">
+          <div class="fieldset-cat-purposes__wrapper wrapper">
+            <label class="fieldset-cat-purposes__label">
+              <input class="visually-hidden" type="radio" name="purpose" value="weight-loss" checked>
+              <span class="fieldset-cat-purposes__text">Похудение</span>
+            </label>
+            <label class="fieldset-cat-purposes__label">
+              <input class="visually-hidden" type="radio" name="purpose" value="weight-gain">
+              <span class="fieldset-cat-purposes__text">Набор массы</span>
+            </label>
+            <label class="fieldset-cat-purposes__label">
+              <input class="visually-hidden" type="radio" name="purpose" value="unknown">
+              <span class="fieldset-cat-purposes__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="pick-up-program-form__owner-contacts-fieldset fieldset-owner-contacts">
-          <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
-          <label class="fieldset-owner-contacts__label wrapper">
-            <span class="fieldset-owner-contacts__text">E-mail:*</span>
-            <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label class="fieldset-owner-contacts__label wrapper">
-            <span class="fieldset-owner-contacts__text">Телефон:*</span>
-            <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-          </label>
+          <div class="fieldset-owner-contacts__wrapper wrapper">
+            <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
+            <label class="fieldset-owner-contacts__label">
+              <span class="fieldset-owner-contacts__text">E-mail:*</span>
+              <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="fieldset-owner-contacts__label">
+              <span class="fieldset-owner-contacts__text">Телефон:*</span>
+              <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" pattern="[0-9]\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="pick-up-program-form__comments-fieldset fieldset-comments">
-          <legend class="fieldset-comments__title">Комментарий</legend>
-          <textarea class="fieldset-comments__input" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="fieldset-comments__wrapper wrapper">
+            <legend class="fieldset-comments__title"><span>Комментарий</span></legend>
+            <textarea class="fieldset-comments__input" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="pick-up-program-form__extra-fieldset fieldset-extra">
-          <legend class="fieldset-extra__title">Дополнительно</legend>
-          <label class="fieldset-extra__label">
-            <input class="visually-hidden" type="checkbox" name="sweetener" value="true" checked>
-            <span class="fieldset-extra__text">Cахарозаменитель</span>
-          </label>
-          <label class="fieldset-extra__label">
-            <input class="visually-hidden" type="checkbox" name="drink-water" value="true">
-            <span class="fieldset-extra__text">Питьевая вода</span>
-          </label>
-          <label class="fieldset-extra__label">
-            <input class="visually-hidden" type="checkbox" name="milk" value="true">
-            <span class="fieldset-extra__text">Молоко</span>
-          </label>
-          <label class="fieldset-extra__label">
-            <input class="visually-hidden" type="checkbox" name="vitamins" value="true">
-            <span class="fieldset-extra__text">Витамины</span>
-          </label>
+          <div class="fieldset-comments__wrapper wrapper">
+            <legend class="fieldset-extra__title">Дополнительно</legend>
+            <label class="fieldset-extra__label">
+              <input class="visually-hidden" type="checkbox" name="sweetener" value="true" checked>
+              <span class="fieldset-extra__text">Cахарозаменитель</span>
+            </label>
+            <label class="fieldset-extra__label">
+              <input class="visually-hidden" type="checkbox" name="drink-water" value="true">
+              <span class="fieldset-extra__text">Питьевая вода</span>
+            </label>
+            <label class="fieldset-extra__label">
+              <input class="visually-hidden" type="checkbox" name="milk" value="true">
+              <span class="fieldset-extra__text">Молоко</span>
+            </label>
+            <label class="fieldset-extra__label">
+              <input class="visually-hidden" type="checkbox" name="vitamins" value="true">
+              <span class="fieldset-extra__text">Витамины</span>
+            </label>
+          </div>
         </fieldset>
         <div class="pick-up-program-form__submit-block wrapper">
           <button class="pick-up-program-form__submit button" type="submit">Отправить заявку</button>
@@ -100,13 +113,15 @@
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts-page-footer">
+      <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts-page-footer__wrapper">
-          <p class="contacts-page-footer__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts-page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__wrapper contacts__wrapper--info">
+          <div class="wrapper">
+            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
         </div>
-        <iframe class="contacts-page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__map wrapper wrapper--paddingless" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
       <div class="page-footer__secondary wrapper">
         <a class="page-footer__logo logo" href="index.html" aria-label="Главная">

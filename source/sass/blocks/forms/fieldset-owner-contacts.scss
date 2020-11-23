@@ -1,0 +1,26 @@
+.fieldset-owner-contacts {
+  padding: 0;
+  color: $color-dark;
+}
+
+.fieldset-owner-contacts__title {
+  line-height: 26px;
+  color: $color-dark-dark;
+  font-size: 24px;
+}
+
+.fieldset-owner-contacts__label {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset-owner-contacts__input {
+  font: inherit;
+  color: inherit;
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+  }
+}

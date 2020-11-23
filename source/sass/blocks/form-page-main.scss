@@ -1,0 +1,17 @@
+.form-page-main {
+  outline: $outline-debug;
+}
+
+.form-page-main__wrapper {
+  margin-bottom: 39px;
+}
+
+.form-page-main__title {
+  @include header-reset;
+  line-height: 36px;
+  font-size: 36px;
+}
+
+.form-page-main__text {
+  font-size: 14px;
+}
