@@ -1,0 +1,20 @@
+.how-it-works {
+  outline: $outline-debug;
+}
+
+.how-it-works__title {
+  @include header-reset;
+  line-height: 40px;
+  font-size: 36px;
+}
+
+.how-it-works__list {
+  @include list-reset;
+  @include text-secondary;
+}
+
+.how-it-works__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

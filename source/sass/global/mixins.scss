@@ -1,0 +1,38 @@
+//Text
+@mixin text-primary {
+  line-height: 18px;
+  color: $color-dark-dark;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin text-secondary {
+  line-height: 18px;
+  color: $color-dark;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+//Links
+@mixin link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+//Lists
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//Headers
+@mixin header-reset {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,49 @@
+.example {
+  outline: $outline-debug-contrast;
+  background-color: $color-light-special-1;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.example__info {
+  margin-bottom: 42px;
+  outline: $outline-debug;
+}
+
+.example__title {
+  @include header-reset;
+  line-height: 40px;
+  font-size: 36px;
+}
+
+.example__text {
+  @include text-secondary;
+}
+
+.example__stats {
+  @include list-reset;
+}
+
+.example__item {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.example__term--info {
+  @include text-secondary;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.example__value {
+  margin: 0;
+}
+
+.example__value--important {
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.example__slider {
+  margin: 0;
+}

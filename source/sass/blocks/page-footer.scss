@@ -1,0 +1,12 @@
+.page-footer {
+  outline: $outline-debug;
+}
+
+.page-footer__secondary {
+  padding-top: 39px;
+  padding-bottom: 22px;
+}
+
+.page-footer__socials {
+  @include list-reset;
+}

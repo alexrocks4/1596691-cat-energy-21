@@ -1,0 +1,5 @@
+.academy-logo__text {
+  @include link-reset;
+  @include text-secondary;
+  font-size: 16px;
+}
