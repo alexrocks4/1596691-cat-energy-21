@@ -34,3 +34,10 @@
 @import "blocks/forms/fieldset-owner-contacts.scss";
 @import "blocks/forms/fieldset-comments.scss";
 @import "blocks/forms/fieldset-extra.scss";
+
+//Catalog page specific blocks
+@import "blocks/catalog-page-main.scss";
+@import "blocks/products-primary.scss";
+@import "blocks/card-product.scss";
+@import "blocks/card-show-more.scss";
+@import "blocks/products-extra.scss";

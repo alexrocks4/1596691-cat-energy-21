@@ -1,0 +1,17 @@
+.card-show-more {
+  padding-top: 26px;
+  padding-bottom: 25px;
+}
+
+.card-show-more__title {
+  @include header-reset;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $color-dark-accent;
+}
+
+.card-show-more__text {
+  @include text-secondary;
+  line-height: 16px;
+  font-size: 12px;
+}
