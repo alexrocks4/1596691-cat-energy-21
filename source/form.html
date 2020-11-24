@@ -67,8 +67,10 @@
           </div>
         </fieldset>
         <fieldset class="pick-up-program-form__owner-contacts-fieldset fieldset-owner-contacts">
+          <legend class="fieldset-owner-contacts__title-wrapper wrapper">
+            <span class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</span>
+          </legend>
           <div class="fieldset-owner-contacts__wrapper wrapper">
-            <legend class="fieldset-owner-contacts__title">Контактные данные (владельца кота)</legend>
             <label class="fieldset-owner-contacts__label">
               <span class="fieldset-owner-contacts__text">E-mail:*</span>
               <input class="fieldset-owner-contacts__input fieldset-owner-contacts__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -80,14 +82,18 @@
           </div>
         </fieldset>
         <fieldset class="pick-up-program-form__comments-fieldset fieldset-comments">
-          <div class="fieldset-comments__wrapper wrapper">
-            <legend class="fieldset-comments__title"><span>Комментарий</span></legend>
+          <legend class="fieldset-comments__title-wrapper wrapper">
+            <span class="fieldset-comments__title">Комментарий</span>
+          </legend>
+          <div class="fieldset-comments__input-wrapper wrapper">
             <textarea class="fieldset-comments__input" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="pick-up-program-form__extra-fieldset fieldset-extra">
-          <div class="fieldset-comments__wrapper wrapper">
-            <legend class="fieldset-extra__title">Дополнительно</legend>
+          <legend class="fieldset-extra__title-wrapper wrapper">
+            <span class="fieldset-extra__title">Комментарий</span>
+          </legend>
+          <div class="fieldset-extra__wrapper wrapper">
             <label class="fieldset-extra__label">
               <input class="visually-hidden" type="checkbox" name="sweetener" value="true" checked>
               <span class="fieldset-extra__text">Cахарозаменитель</span>
