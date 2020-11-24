@@ -1,8 +1,14 @@
 .button {
-  font: inherit;
+  @include link-reset;
+  @include text-primary;
   background-color: $color-primary;
   line-height: 18px;
   text-transform: uppercase;
   color: $color-light-light;
   font-size: 14px;
+}
+
+.button--info {
+  background-color: $color-light;
+  color: $color-dark;
 }

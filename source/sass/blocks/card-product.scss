@@ -1,0 +1,27 @@
+.card-product {
+  padding-top: 17px;
+  padding-bottom: 24px;
+}
+
+.card-product__title {
+  @include header-reset;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $color-dark-special-1;
+}
+
+.card-product__title-link {
+  @include link-reset;
+}
+
+.card-product__data-list {
+  @include list-reset;
+  @include text-secondary;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.card-product__data-value {
+  margin: 0;
+  padding: 0;
+}

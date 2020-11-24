@@ -1,0 +1,37 @@
+.products-extra__title {
+  @include header-reset;
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.products-extra__dataset {
+  @include text-secondary;
+  line-height: 14px;
+}
+
+.products-extra__cell {
+  padding: 0;
+}
+
+.products-extra__product-name {
+  @include text-primary;
+  text-transform: uppercase;
+  line-height: 16px;
+  color: $color-dark-special-1;
+}
+
+.products-extra__bonus {
+  @include text-secondary;
+  margin: 0;
+  padding: 0;
+  background-color: $color-primary;
+  background-image: url("../img/icon_gift.svg"),
+    url("../img/gift-photo-mobile.jpg");
+  background-position: 50% 58px, 0 0;
+  background-repeat: no-repeat;
+  height: 289px;
+  width: 280px;
+  line-height: 20px;
+  color: $color-light-light;
+  font-size: 16px;
+}
