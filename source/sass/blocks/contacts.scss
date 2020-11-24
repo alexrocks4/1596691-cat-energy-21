@@ -2,9 +2,13 @@
   outline: $outline-debug-contrast;
 }
 
-.contacts_wrapper {
+.contacts__wrapper {
   padding-top: 28px;
   padding-bottom: 22px;
+}
+
+.contacts__wrapper--info {
+  background-color: $color-light-light;
 }
 
 .contacts__text {

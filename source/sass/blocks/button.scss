@@ -1,6 +1,8 @@
 .button {
+  font: inherit;
   background-color: $color-primary;
   line-height: 18px;
+  text-transform: uppercase;
   color: $color-light-light;
   font-size: 14px;
 }

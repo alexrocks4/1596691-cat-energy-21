@@ -1,0 +1,24 @@
+.fieldset-comments {
+  padding: 0;
+  color: $color-dark;
+}
+
+.fieldset-comments__title {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  color: $color-dark-dark;
+  font-size: 24px;
+}
+
+.fieldset-comments__input {
+  font: inherit;
+  color: inherit;
+  display: block;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+  }
+}
