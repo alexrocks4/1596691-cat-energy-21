@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 //Global
-@import "global/variables.scss";
+@import "global/breakpoints.scss";
+@import "global/colors.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
 

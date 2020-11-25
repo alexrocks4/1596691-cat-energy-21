@@ -4,3 +4,9 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+.page-header__nav-toggle {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
