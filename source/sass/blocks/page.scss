@@ -11,6 +11,14 @@
   min-height: 100%;
 }
 
+.page__body--decorated {
+  @media (min-width: $large-viewport-width) {
+    background-image: linear-gradient(to right, transparent 0, transparent 50%, $color-primary-special-1 50%, $color-primary-special-1);
+    background-size: auto 694px;
+    background-repeat: no-repeat;
+  }
+}
+
 .page__header--positioning-base {
   margin-bottom: 0;
 }
