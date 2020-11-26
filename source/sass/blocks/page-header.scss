@@ -3,6 +3,20 @@
   line-height: 20px;
   font-size: 20px;
   font-weight: 500;
+
+  @media (min-width: $medium-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .page-header__nav-toggle {

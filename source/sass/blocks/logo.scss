@@ -1,3 +1,17 @@
 .logo {
   @include link-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 190px;
+
+  @media (min-width: $medium-viewport-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: 202px;
+  }
 }
+
