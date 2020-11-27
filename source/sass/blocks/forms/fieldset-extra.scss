@@ -9,6 +9,20 @@
   font-size: 24px;
 }
 
+.fieldset-extra__wrapper {
+  @media (min-width: $medium-viewport-width) {
+    display: grid;
+    grid-template-columns: 344px 1fr;
+    align-items: start;
+    justify-items: start;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
+}
+
 .fieldset-extra__label {
   display: block;
   margin: 0;

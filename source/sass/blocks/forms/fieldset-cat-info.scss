@@ -2,6 +2,18 @@
   padding: 0;
   padding-bottom: 24px;
   color: $color-dark;
+
+  @media (min-width: $large-viewport-width) {
+    width: 570px;
+  }
+}
+
+.fieldset-cat-info__wrapper {
+  @media (min-width: $large-viewport-width) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
 }
 
 .fieldset-cat-info__label {

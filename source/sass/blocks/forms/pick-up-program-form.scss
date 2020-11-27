@@ -2,6 +2,19 @@
   outline: $outline-debug-contrast;
 }
 
+.pick-up-program-form__wrapper {
+  @media (min-width: $large-viewport-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: $large-viewport-width;
+    margin: 0 auto;
+    padding: 0 $large-viewport-padding;
+  }
+}
+
 .pick-up-program-form__cat-info-fieldset {
   margin: 0;
 }
@@ -28,6 +41,12 @@
 
 .pick-up-program-form__submit-block {
   margin-bottom: 32px;
+
+  @media (min-width: $medium-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .pick-up-program-form__required-text {
