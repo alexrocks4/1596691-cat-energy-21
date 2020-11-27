@@ -64,56 +64,58 @@
         </ol>
       </section>
       <section class="page-main__example example">
-        <div class="example__info wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__stats">
-            <div class="example__item example__item--important">
-              <dt class="example__term example__term--info">Снижение веса</dt>
-              <dd class="example__value example__value--important">5 КГ</dd>
-            </div>
-            <div class="example__item example__item--important">
-              <dt class="example__term example__term--info">Затрачено времени</dt>
-              <dd class="example__value example__value--important">60 ДНЕЙ</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__term">Затраты на питание: </dt>
-              <dd class="example__value">15 000 РУБ.</dd>
-            </div>
-          </dl>
+        <div class="example__wrapper wrapper">
+          <div class="example__info">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__stats">
+              <div class="example__item example__item--important">
+                <dt class="example__term example__term--info">Снижение веса</dt>
+                <dd class="example__value example__value--important">5 КГ</dd>
+              </div>
+              <div class="example__item example__item--important">
+                <dt class="example__term example__term--info">Затрачено времени</dt>
+                <dd class="example__value example__value--important">60 ДНЕЙ</dd>
+              </div>
+              <div class="example__item example__item--info">
+                <dt class="example__term">Затраты на питание: </dt>
+                <dd class="example__value">15 000 РУБ.</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="example__slider slider">
+            <figure class="slider__item slider__item--visible">
+              <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый бело-серый кот, сидя на полу.">
+              <figcaption class="visually-hidden">Кот Борис до похудения</figcaption>
+            </figure>
+            <figure class="slider__item">
+              <img src="https://via.placeholder.com/251x240" width="251" height="240" alt="Тощий бело-серый кот, сидя на полу.">
+              <figcaption class="visually-hidden">Кот Борис после похудения</figcaption>
+            </figure>
+            <figcaption class="slider__title">
+              <span class="visually-hidden">Коты до и после похудения</span>
+              <button class="slider__button-before" type="button" aria-label="Показать фотографию кота до похудения">Было</button>
+              <span class="slider__switch slider__switch--on"></span>
+              <label class="slider__range">
+                <input class="visually-hidden" type="range" aria-label="Процент видимой части двух фотографий кота">
+                <span class="slider__handle"></span>
+              </label>
+              <button class="slider__button-after" type="button" aria-label="Показать фотографию кота после похудения">Стало</button>
+            </figcaption>
+          </figure>
         </div>
-        <figure class="example__slider slider">
-          <figure class="slider__item slider__item--visible wrapper wrapper--paddingless">
-            <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый бело-серый кот, сидя на полу.">
-            <figcaption class="visually-hidden">Кот Борис до похудения</figcaption>
-          </figure>
-          <figure class="slider__item wrapper wrapper--paddingless">
-            <img src="https://via.placeholder.com/251x240" width="251" height="240" alt="Тощий бело-серый кот, сидя на полу.">
-            <figcaption class="visually-hidden">Кот Борис после похудения</figcaption>
-          </figure>
-          <figcaption class="slider__title wrapper">
-            <span class="visually-hidden">Коты до и после похудения</span>
-            <button class="slider__button-before" type="button" aria-label="Показать фотографию кота до похудения">Было</button>
-            <span class="slider__switch slider__switch--on"></span>
-            <label class="slider__range">
-              <input class="visually-hidden" type="range" aria-label="Процент видимой части двух фотографий кота">
-              <span class="slider__handle"></span>
-            </label>
-            <button class="slider__button-after" type="button" aria-label="Показать фотографию кота после похудения">Стало</button>
-          </figcaption>
-        </figure>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts contacts contacts--info">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper contacts__wrapper--info">
-          <div class="wrapper">
+        <div class="contacts__wrapper wrapper wrapper--paddingless">
+          <div class="contacts__content">
             <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <iframe class="contacts__map wrapper wrapper--paddingless" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
       <div class="page-footer__secondary wrapper">
         <a class="page-footer__logo logo" aria-label="Главная">

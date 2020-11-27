@@ -2,20 +2,19 @@
   box-sizing: border-box;
   margin: 0 auto;
   width: $small-viewport-width;
-  padding: 0 20px;
+  padding: 0 $small-viewport-padding;
 
   @media (min-width: $medium-viewport-width) {
     width: $medium-viewport-width;
-    padding: 0 30px;
+    padding: 0 $medium-viewport-padding;
   }
 
   @media (min-width: $large-viewport-width) {
     width: $large-viewport-width;
-    padding: 0 110px;
+    padding: 0 $large-viewport-padding;
   }
 }
 
 .wrapper--paddingless {
-  width: $small-viewport-width;
   padding: 0;
 }

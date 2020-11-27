@@ -4,10 +4,24 @@
 }
 
 .page-footer__secondary {
+  outline: $outline-debug;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   padding-top: 39px;
   padding-bottom: 22px;
+
+  @media (min-width: $medium-viewport-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__socials {
   @include list-reset;
+}
+
+.page-footer__logo-academy {
+  align-self: stretch;
 }

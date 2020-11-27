@@ -1,5 +1,18 @@
 .slider {
   outline: $outline-debug-contrast;
+
+  @media (min-width: $large-viewport-width) {
+    width: 710px;
+  }
+}
+
+.slider__item {
+  margin: 0;
+
+  @media (max-width: $small-viewport-max-width) {
+    position: relative;
+    left: -$small-viewport-padding;
+  }
 }
 
 .slider__button-before {

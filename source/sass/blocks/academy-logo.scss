@@ -1,5 +1,14 @@
+.academy-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .academy-logo__text {
   @include link-reset;
   @include text-secondary;
   font-size: 16px;
+}
+
+.academy-logo__picture {
+  margin-left: auto;
 }
