@@ -1,5 +1,12 @@
 .features {
   outline: $outline-debug;
+
+  @media (min-width: $large-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
@@ -7,6 +14,10 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: 570px;
   }
 }
 

@@ -3,4 +3,43 @@
   line-height: 20px;
   font-size: 20px;
   font-weight: 500;
+
+  @media (min-width: $medium-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page-header__nav-toggle {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
+
+.page-header--decorated {
+  @media (min-width: $large-viewport-width) {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -2;
+      background-color: $color-primary;
+      background-image: linear-gradient(to bottom, $color-primary-dark, $color-primary-dark),
+        url("../img/index-background-desktop.jpg");
+      background-position: 0 0, 0 0;
+      background-repeat: no-repeat, no-repeat;
+      height: 694px;
+      width: 720px;
+      content: "";
+    }
+  }
 }

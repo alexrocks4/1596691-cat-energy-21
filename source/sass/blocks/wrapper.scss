@@ -1,10 +1,20 @@
 .wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 20px;
-  width: 280px;
+  width: $small-viewport-width;
+  padding: 0 $small-viewport-padding;
+
+  @media (min-width: $medium-viewport-width) {
+    width: $medium-viewport-width;
+    padding: 0 $medium-viewport-padding;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: $large-viewport-width;
+    padding: 0 $large-viewport-padding;
+  }
 }
 
 .wrapper--paddingless {
   padding: 0;
-  width: 320px;
 }

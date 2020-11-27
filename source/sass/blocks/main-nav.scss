@@ -1,9 +1,24 @@
 .main-nav {
   text-transform: uppercase;
+
+  @media (min-width: $medium-viewport-width) {
+    width: 440px;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    width: 478px;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $medium-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__link {

@@ -11,10 +11,35 @@
 .how-it-works__list {
   @include list-reset;
   @include text-secondary;
+
+  @media (min-width: $medium-viewport-width) {
+    display: grid;
+    grid-template-columns: 249px 249px;
+    grid-auto-rows: minmax(280px, auto);
+    column-gap: 135px;
+    row-gap: 37px;
+    align-items: start;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 0;
+    row-gap: 0;
+  }
 }
 
 .how-it-works__item {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    width: 230px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }

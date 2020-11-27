@@ -5,9 +5,25 @@
   padding-bottom: 25px;
 }
 
+.example__wrapper {
+  outline: $outline-debug;
+
+  @media (min-width: $large-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 70px;
+  }
+}
+
 .example__info {
   margin-bottom: 42px;
   outline: $outline-debug;
+
+  @media (min-width: $large-viewport-width) {
+    width: 450px;
+  }
 }
 
 .example__title {
@@ -22,11 +38,40 @@
 
 .example__stats {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (min-width: $medium-viewport-width) {
+    justify-content: normal;
+  }
 }
 
 .example__item {
   line-height: 20px;
   font-size: 14px;
+}
+
+.example__item--important {
+  width: 124px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 42px;
+    width: 162px;
+  }
+}
+
+.example__item--info {
+  margin: 0 auto;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-left: 0;
+  }
 }
 
 .example__term--info {
