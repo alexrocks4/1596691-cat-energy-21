@@ -3,6 +3,18 @@
   padding-top: 20px;
   padding-bottom: 22px;
   color: $color-dark-special-1;
+
+  @media (min-width: $large-viewport-width) {
+    width: 570px;
+  }
+}
+
+.fieldset-cat-purposes__wrapper {
+  @media (min-width: $large-viewport-width) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
 }
 
 .fieldset-cat-purposes__label {

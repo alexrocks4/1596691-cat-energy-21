@@ -3,6 +3,16 @@
   color: $color-dark;
 }
 
+.fieldset-owner-contacts__wrapper {
+  @media (min-width: $large-viewport-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: start;
+    justify-items: start;
+  }
+}
+
 .fieldset-owner-contacts__title {
   line-height: 26px;
   color: $color-dark-dark;
