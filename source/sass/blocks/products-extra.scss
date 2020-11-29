@@ -1,3 +1,11 @@
+.products-extra__wrapper {
+  @media (min-width: $large-viewport-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
 .products-extra__title {
   @include header-reset;
   line-height: 24px;
@@ -6,32 +14,106 @@
 
 .products-extra__dataset {
   @include text-secondary;
+  width: 100%;
   line-height: 14px;
+
+  @media (min-width: $large-viewport-width) {
+    margin-right: 80px;
+    width: auto;
+  }
+}
+
+.products-extra__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media (min-width: $large-viewport-width) {
+    display: table-row;
+    align-items: normal;
+  }
 }
 
 .products-extra__cell {
+  display: block;
   padding: 0;
+
+  @media (min-width: $large-viewport-width) {
+    display: table-cell;
+  }
 }
 
 .products-extra__product-name {
   @include text-primary;
+  width: 100%;
   text-transform: uppercase;
   line-height: 16px;
   color: $color-dark-special-1;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: auto;
+    width: auto;
+  }
+}
+
+.products-extra__product-price {
+  margin-left: auto;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-left: 0;
+  }
+}
+
+.products-extra__product-actions {
+  width: 100%;
+}
+
+.products-extra__product-buy {
+  display: block;
 }
 
 .products-extra__bonus {
   @include text-secondary;
-  margin: 0;
-  padding: 0;
   background-color: $color-primary;
   background-image: url("../img/icon_gift.svg"),
     url("../img/gift-photo-mobile.jpg");
   background-position: 50% 58px, 0 0;
   background-repeat: no-repeat;
-  height: 289px;
-  width: 280px;
+  margin: 0;
+  padding: 0;
+  min-height: 289px;
+  width: 100%;
+  text-align: center;
   line-height: 20px;
   color: $color-light-light;
   font-size: 16px;
+
+  @media (min-width: $medium-viewport-width) {
+    background-position: 78px 57px, 0 0;
+    text-align: left;
+    min-height: 200px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    background-position: 50% 58px, 0 0;
+    text-align: center;
+    min-height: 289px;
+    width: 245px;
+  }
+}
+
+.products-extra__bonus-text {
+  display: inline-block;
+  margin-top: 186px;
+  width: 161px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-top: 71px;
+    margin-left: 423px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-top: 186px;
+    margin-left: 0;
+  }
 }

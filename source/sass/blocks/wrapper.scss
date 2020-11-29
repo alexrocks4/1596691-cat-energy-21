@@ -15,6 +15,30 @@
   }
 }
 
+//Wrapper only for small viewport
+.wrapper--small-viewport-only {
+  @media (min-width: $medium-viewport-width) {
+    @include clear-wrapper;
+  }
+}
+
+//Wrapper only for viewports greater than small viewports
+.wrapper--greater-small-viewport {
+  @include clear-wrapper;
+
+  @media (min-width: $medium-viewport-width) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: $medium-viewport-width;
+    padding: 0 $medium-viewport-padding;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: $large-viewport-width;
+    padding: 0 $large-viewport-padding;
+  }
+}
+
 .wrapper--paddingless {
   padding: 0;
 }
