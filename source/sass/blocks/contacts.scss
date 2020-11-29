@@ -72,12 +72,6 @@
 .contacts__map {
   display: block;
   border: none;
-
-  @media (min-width: $medium-viewport-width) {
-    width: $medium-viewport-width;
-  }
-
-  @media (min-width: $large-viewport-width) {
-    width: $large-viewport-width;
-  }
+  width: 100%;
+  min-width: $small-viewport-width;
 }

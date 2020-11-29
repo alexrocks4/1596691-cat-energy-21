@@ -1,3 +1,20 @@
+.products-primary {
+  @media (min-width: $medium-viewport-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(511px, auto);
+    column-gap: 60px;
+    row-gap: 60px;
+    align-items: end;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
+
 .products-primary__item {
   outline: $outline-debug-contrast;
 }

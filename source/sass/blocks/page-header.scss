@@ -24,22 +24,3 @@
     display: none;
   }
 }
-
-.page-header--decorated {
-  @media (min-width: $large-viewport-width) {
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -2;
-      background-color: $color-primary;
-      background-image: linear-gradient(to bottom, $color-primary-dark, $color-primary-dark),
-        url("../img/index-background-desktop.jpg");
-      background-position: 0 0, 0 0;
-      background-repeat: no-repeat, no-repeat;
-      height: 694px;
-      width: 720px;
-      content: "";
-    }
-  }
-}
