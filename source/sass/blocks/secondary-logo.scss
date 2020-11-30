@@ -1,0 +1,25 @@
+.secondary-logo {
+  @include link-reset;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
+
+.secondary-logo__text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $medium-viewport-width) {
+    width: 118px;
+    height: 22px;
+  }
+}

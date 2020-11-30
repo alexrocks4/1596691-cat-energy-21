@@ -1,0 +1,45 @@
+.main-logo {
+  @include link-reset;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-logo__picture:first-child {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
+
+.main-logo__picture:nth-child(2) {
+  display: none;
+
+  @media (min-width: $medium-viewport-width) {
+    display: block;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    display: none;
+  }
+}
+
+.main-logo__picture:nth-child(3) {
+  display: none;
+
+  @media (min-width: $large-viewport-width) {
+    display: block;
+    width: 202px;
+    height: 59px;
+  }
+}
+

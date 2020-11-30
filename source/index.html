@@ -7,28 +7,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body page__body--decorated">
-    <header class="page__header page__header--positioning-base page-header wrapper">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo logo" aria-label="Главная">
-          <img class="logo__picture" src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
-          <img class="logo__text" src="https://via.placeholder.com/101x18"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
-        </a>
-        <button class="page-header__nav-toggle" type="button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
+    <header class="page__header page__header--positioning-base page-header wrapper-fluid wrapper-fluid--greater-small-viewport">
+      <div class="page-header__container">
+        <div class="page-header__wrapper page-header__wrapper--nojs wrapper-fluid wrapper-fluid--small-viewport-only">
+          <a class="page-header__main-logo main-logo" href="index.html" aria-label="Главная">
+            <img class="main-logo__picture" src="./img/logo-picture-mobile.svg" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
+            <img class="main-logo__picture" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
+            <img class="main-logo__picture" src="./img/logo-desktop.svg" width="202" height="59" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
+          </a>
+          <a class="page-header__secondary-logo secondary-logo" href="index.html" aria-label="Главная">
+            <img class="secondary-logo__text" src="./img/logo-text.svg"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+          </a>
+          <button class="page-header__nav-toggle nav-toggle nav-toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+        </div>
       </div>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__list-container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -118,8 +126,8 @@
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
       <div class="page-footer__secondary wrapper">
-        <a class="page-footer__logo logo" aria-label="Главная">
-          <img class="logo__text" src="https://via.placeholder.com/101x18" width="128" height="24" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
+        <a class="page-footer__logo-text-link" aria-label="Главная">
+          <img class="page-footer__logo-text" src="https://via.placeholder.com/101x18" width="128" height="24" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
         </a>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
@@ -140,5 +148,27 @@
         </p>
       </div>
     </footer>
+    <script>
+      const mainNav = document.querySelector('.main-nav');
+      const toggleWrapper = document.querySelector('.page-header__wrapper');
+      const navToggle = document.querySelector('.nav-toggle');
+
+      mainNav.classList.remove('main-nav--nojs');
+      toggleWrapper.classList.remove('page-header__wrapper--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (mainNav.classList.contains('main-nav--closed')) {
+          mainNav.classList.remove('main-nav--closed');
+          mainNav.classList.add('main-nav--opened');
+          navToggle.classList.remove('nav-toggle--closed');
+          navToggle.classList.add('nav-toggle--opened');
+        } else {
+          mainNav.classList.remove('main-nav--opened');
+          mainNav.classList.add('main-nav--closed');
+          navToggle.classList.remove('nav-toggle--opened');
+          navToggle.classList.add('nav-toggle--closed');
+        }
+      });
+    </script>
   </body>
 </html>
