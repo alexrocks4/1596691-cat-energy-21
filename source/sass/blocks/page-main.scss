@@ -4,6 +4,14 @@
 
 .page-main__promo {
   margin-bottom: 22px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__features {

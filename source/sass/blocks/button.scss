@@ -1,14 +1,27 @@
 .button {
   @include link-reset;
   @include text-primary;
-  background-color: $color-primary;
-  line-height: 18px;
+  padding: 11px 26px;
+  text-align: center;
   text-transform: uppercase;
-  color: $color-light-light;
+  line-height: 18px;
   font-size: 14px;
 }
 
 .button--info {
   background-color: $color-light;
   color: $color-dark;
+}
+
+.button--primary {
+  background-color: $color-primary;
+  color: $color-light-light;
+
+  &:hover {
+    background-color: $color-primary-special-2;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
 }
