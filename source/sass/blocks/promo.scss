@@ -5,7 +5,7 @@
   color: $color-light-light;
 
   @media (min-width: $medium-viewport-width) {
-    padding-top: 50px;
+    padding-top: 48px;
     background-image: none;
     text-align: left;
     color: $color-dark-dark;
@@ -32,7 +32,7 @@
     background: none;
     background-color: transparent;
     padding-top: 0;
-    min-height: 813px;
+    min-height: 810px;
   }
 
   @media (min-width: $large-viewport-width) {
