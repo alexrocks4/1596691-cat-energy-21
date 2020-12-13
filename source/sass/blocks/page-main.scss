@@ -30,6 +30,10 @@
   margin-bottom: 42px;
 
   @media (min-width: $medium-viewport-width) {
-    margin-bottom: 47px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 11px;
   }
 }

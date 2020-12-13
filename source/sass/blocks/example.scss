@@ -1,39 +1,85 @@
 .example {
-  outline: $outline-debug-contrast;
   background-color: $color-light-special-1;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: $medium-viewport-width) {
+    border-top: 1px solid $color-light-accent;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 619px, $color-light-special-1 619px);
+    padding-top: 43px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    border-top: none;
+    background-image: linear-gradient(to top, $color-light-special-1 462px, transparent 462px);
+    padding-top: 0;
+    padding-bottom: 65px;
+  }
 }
 
-.example__wrapper {
-  outline: $outline-debug;
-
+.example__container {
   @media (min-width: $large-viewport-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding-right: 70px;
+    max-width: 1570px;
   }
 }
 
 .example__info {
   margin-bottom: 42px;
-  outline: $outline-debug;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 58px;
+  }
 
   @media (min-width: $large-viewport-width) {
+    align-self: flex-end;
+    margin-bottom: 11px;
     width: 450px;
   }
 }
 
 .example__title {
   @include header-reset;
+  margin-bottom: 33px;
   line-height: 40px;
   font-size: 36px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 64px;
+    line-height: 60px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 148px;
+  }
 }
 
 .example__text {
   @include text-secondary;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 53px;
+    max-width: 1024px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.example__stats-container {
+  overflow-x: hidden;
 }
 
 .example__stats {
@@ -41,7 +87,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  margin-right: -32px;
+  max-width: 1124px;
+  overflow: hidden;
 
   @media (min-width: $medium-viewport-width) {
     justify-content: normal;
@@ -49,35 +97,114 @@
 }
 
 .example__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-transform: uppercase;
   line-height: 20px;
   font-size: 14px;
+
+  @media (min-width: $medium-viewport-width) {
+    font-size: 20px;
+  }
 }
 
 .example__item--important {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  padding-top: 14px;
   width: 124px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid $color-light-special-2;
+    border-radius: 3px;
+    width: 122px;
+    height: 54px;
+    content: "";
+  }
 
   @media (min-width: $medium-viewport-width) {
     margin-right: 42px;
+    padding-top: 15px;
     width: 162px;
+
+    &::before {
+      width: 160px;
+      height: 70px;
+    }
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 55px;
   }
 }
 
 .example__item--info {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 32px;
+  width: 100%;
 
   @media (min-width: $medium-viewport-width) {
-    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 33px;
+    padding-top: 11px;
+    width: auto;
   }
 
   @media (min-width: $large-viewport-width) {
+    flex-direction: row;
     margin-left: 0;
+    padding-top: 0;
+  }
+}
+
+.example__item--info .example__term {
+  margin-right: 3px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 0;
+    margin-right: 63px;
   }
 }
 
 .example__term--info {
   @include text-secondary;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: $color-light-special-1;
+  padding: 0 15px;
+  max-width: 104px;
+  text-align: center;
+  text-transform: lowercase;
   line-height: 12px;
   font-size: 12px;
+
+  @media (min-width: $medium-viewport-width) {
+    background-color: $color-light-light;
+    padding: 0 8px;
+    max-width: 152px;
+    line-height: 14px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    background-color: $color-light-special-1;
+  }
 }
 
 .example__value {
@@ -85,10 +212,22 @@
 }
 
 .example__value--important {
+  margin-bottom: 8px;
   line-height: 24px;
   font-size: 24px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 11px;
+    line-height: 37px;
+    font-size: 30px;
+  }
 }
 
 .example__slider {
   margin: 0;
+
+  @media (min-width: $large-viewport-width) {
+    position: relative;
+    left: 24px;
+  }
 }

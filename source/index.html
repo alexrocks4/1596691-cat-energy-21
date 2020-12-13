@@ -84,45 +84,61 @@
         </ol>
       </section>
       <section class="page-main__example example">
-        <div class="example__wrapper wrapper">
-          <div class="example__info">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <dl class="example__stats">
-              <div class="example__item example__item--important">
-                <dt class="example__term example__term--info">Снижение веса</dt>
-                <dd class="example__value example__value--important">5 КГ</dd>
+        <div class="wrapper-fluid wrapper-fluid--greater-large-viewport">
+          <div class="example__container">
+            <div class="example__info">
+              <div class="wrapper-fluid wrapper-fluid--lower-large-viewport">
+                <h2 class="example__title">Живой пример</h2>
+                <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по&#8209прежнему спит по 16 часов в день.</p>
               </div>
-              <div class="example__item example__item--important">
-                <dt class="example__term example__term--info">Затрачено времени</dt>
-                <dd class="example__value example__value--important">60 ДНЕЙ</dd>
+              <div class="example__stats-container wrapper wrapper--small-viewport-only">
+                <div class="wrapper-fluid wrapper-fluid--medium-viewport-only">
+                  <dl class="example__stats">
+                    <div class="example__item example__item--important">
+                      <dt class="example__term example__term--info">Снижение<br class="br br--small-viewport-only"> веса</dt>
+                      <dd class="example__value example__value--important">5 КГ</dd>
+                    </div>
+                    <div class="example__item example__item--important">
+                      <dt class="example__term example__term--info">Затрачено времени</dt>
+                      <dd class="example__value example__value--important">60 ДНЕЙ</dd>
+                    </div>
+                    <div class="example__item example__item--info">
+                      <dt class="example__term">Затраты на питание: </dt>
+                      <dd class="example__value">15 000 РУБ.</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
-              <div class="example__item example__item--info">
-                <dt class="example__term">Затраты на питание: </dt>
-                <dd class="example__value">15 000 РУБ.</dd>
-              </div>
-            </dl>
+            </div>
+            <div class="wrapper wrapper--lower-large-viewport">
+              <figure class="example__slider slider">
+                <figure class="slider__item slider__item--visible slider__item-before">
+                  <img class="slider__img slider__img-before" src="../img/before-mobile.png" width="311" height="232" alt="Толстый бело-серый кот, сидя на полу.">
+                  <img class="slider__img slider__img-before" src="../img/cat-fat.png" width="677" height="520" alt="Толстый бело-серый кот, сидя на полу.">
+                  <figcaption class="visually-hidden">Кот Борис до похудения</figcaption>
+                </figure>
+                <figure class="slider__item slider__item-after">
+                  <img class="slider__img slider__img-after" src="../img/after-mobile.png" width="251" height="240" alt="Тощий бело-серый кот, сидя на полу.">
+                  <img class="slider__img slider__img-after" src="../img/cat-skinny.png" width="545" height="520" alt="Тощий бело-серый кот, сидя на полу.">
+                  <figcaption class="visually-hidden">Кот Борис после похудения</figcaption>
+                </figure>
+                <figcaption class="slider__title">
+                  <span class="visually-hidden">Коты до и после похудения</span>
+                  <button class="slider__button slider__button-before" type="button" aria-label="Показать фотографию кота до похудения">
+                    <span class="slider__button-text">Было</span>
+                  </button>
+                  <span class="slider__switch slider__switch--before"></span>
+                  <label class="slider__range">
+                    <span class="visually-hidden">Процент видимой части двух фотографий кота</span>
+                    <input class="slider__range-input" type="range" min="1" max="100" value="50">
+                  </label>
+                  <button class="slider__button slider__button-after" type="button" aria-label="Показать фотографию кота после похудения">
+                    <span class="slider__button-text">Стало</span>
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <figure class="example__slider slider">
-            <figure class="slider__item slider__item--visible">
-              <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Толстый бело-серый кот, сидя на полу.">
-              <figcaption class="visually-hidden">Кот Борис до похудения</figcaption>
-            </figure>
-            <figure class="slider__item">
-              <img src="https://via.placeholder.com/251x240" width="251" height="240" alt="Тощий бело-серый кот, сидя на полу.">
-              <figcaption class="visually-hidden">Кот Борис после похудения</figcaption>
-            </figure>
-            <figcaption class="slider__title">
-              <span class="visually-hidden">Коты до и после похудения</span>
-              <button class="slider__button-before" type="button" aria-label="Показать фотографию кота до похудения">Было</button>
-              <span class="slider__switch slider__switch--on"></span>
-              <label class="slider__range">
-                <input class="visually-hidden" type="range" aria-label="Процент видимой части двух фотографий кота">
-                <span class="slider__handle"></span>
-              </label>
-              <button class="slider__button-after" type="button" aria-label="Показать фотографию кота после похудения">Стало</button>
-            </figcaption>
-          </figure>
         </div>
       </section>
     </main>

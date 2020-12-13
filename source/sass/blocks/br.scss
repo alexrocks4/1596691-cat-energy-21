@@ -2,10 +2,28 @@
   display: inline;
 }
 
+.br--small-viewport-only {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
+
 .br--greater-medium-viewport {
   display: none;
 
   @media (min-width: $medium-viewport-width) {
     display: inline;
+  }
+}
+
+.br--medium-viewport-only {
+  display: none;
+
+  @media (min-width: $medium-viewport-width) {
+    display: inline;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    display: none;
   }
 }
