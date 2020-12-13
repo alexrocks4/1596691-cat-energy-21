@@ -16,8 +16,20 @@
 
 .page-main__features {
   margin-bottom: 27px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-main__how-it-works {
   margin-bottom: 42px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 47px;
+  }
 }

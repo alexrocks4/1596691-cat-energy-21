@@ -19,7 +19,6 @@
   @media (min-width: $medium-viewport-width) {
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 30px;
     padding-top: 77px;
     padding-bottom: 57px;
     padding-left: 52px;
@@ -39,6 +38,7 @@
 
   @media (min-width: $large-viewport-width) {
     flex-grow: 1;
+    margin-bottom: 30px;
     width: 570px;
 
     &:nth-of-type(2n+1) {

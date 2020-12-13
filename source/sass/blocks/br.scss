@@ -1,0 +1,11 @@
+.br {
+  display: inline;
+}
+
+.br--greater-medium-viewport {
+  display: none;
+
+  @media (min-width: $medium-viewport-width) {
+    display: inline;
+  }
+}
