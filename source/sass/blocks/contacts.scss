@@ -9,57 +9,83 @@
 }
 
 .contacts__content {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-top: 28px;
-  padding-bottom: 22px;
-  padding-left: 19px;
-  padding-right: 19px;
+  justify-content: space-between;
+  padding: 27px 19px 26px;
+  min-height: 114px;
+
+  @media (min-width: 520px) {
+    justify-content: space-around;
+  }
 
   @media (min-width: $medium-viewport-width) {
+    justify-content: space-between;
     padding-top: 62px;
     padding-bottom: 58px;
     padding-left: 71px;
     padding-right: 72px;
   }
 
+  @media (min-width: 1024px) {
+    justify-content: space-around;
+  }
+
   @media (min-width: $large-viewport-width) {
-    box-sizing: border-box;
     position: absolute;
     top: 95px;
     left: 110px;
     width: 570px;
+    justify-content: space-between;
     background-color: $color-light-light;
-    padding-top: 66px;
-    padding-bottom: 51px;
+    padding-top: 61px;
+    padding-bottom: 57px;
     padding-left: 76px;
     padding-right: 89px;
   }
 }
 
 .contacts__text {
-  width: 140px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   color: $color-dark-accent;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 20px;
+    padding-top: 4px;
+    line-height: 25px;
+    font-size: 20px;
+  }
 
   @media (min-width: $large-viewport-width) {
     margin-right: 87px;
   }
 }
 
+.contacts__text span {
+  @media (max-width: $small-viewport-max-width) {
+    line-height: 23px;
+  }
+}
+
 .contacts__address {
   @include text-secondary;
-  width: 140px;
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+  padding-top: 1px;
   line-height: 20px;
 
   @media (min-width: $medium-viewport-width) {
-    margin-left: auto;
+    margin-right: 0;
     text-align: right;
+    font-size: 16px;
   }
 
   @media (min-width: $large-viewport-width) {
-    margin-left: 0;
     text-align: left;
   }
 }
@@ -69,4 +95,9 @@
   border: none;
   width: 100%;
   min-width: $small-viewport-width;
+  height: 362px;
+
+  @media (min-width: $medium-viewport-width) {
+    height: 400px;
+  }
 }

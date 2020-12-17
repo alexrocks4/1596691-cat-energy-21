@@ -224,12 +224,12 @@
   }
 
   &:hover::before,
-  &:hover::after  {
+  &:hover::after {
     right: 0;
   }
 
   &:active::before,
-  &:active::after  {
+  &:active::after {
     background-color: $color-light-special-6;
   }
 
@@ -239,7 +239,7 @@
     height: 2px;
   }
 
-  &:hover::before  {
+  &:hover::before {
     right: 8px;
     width: 26px;
   }

@@ -15,7 +15,6 @@
 }
 
 .wrapper-fluid--small-viewport-only {
-
   @media (min-width: $medium-viewport-width) {
     @include clear-wrapper-fluid;
   }
@@ -58,6 +57,8 @@
 }
 
 .wrapper-fluid--greater-large-viewport {
+  @include clear-wrapper-fluid;
+
   @media (min-width: $large-viewport-width) {
     margin-left: auto;
     margin-right: auto;

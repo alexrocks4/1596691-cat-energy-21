@@ -59,22 +59,14 @@
 
 .page-header__wrapper--nojs .page-header__main-logo,
 .page-header__wrapper--nojs .page-header__secondary-logo {
-
   @media (max-width: $small-viewport-max-width) {
     margin-right: auto;
   }
 }
 
 .page-header__wrapper--nojs .page-header__secondary-logo {
-
   @media (max-width: $small-viewport-max-width) {
     margin-left: 20px;
-  }
-}
-
-.page-header__wrapper--nojs .page-header__secondary-logo{
-
-  @media (max-width: $small-viewport-max-width) {
     transform: translateX(-25%);
   }
 }
@@ -84,5 +76,3 @@
   margin-top: 3px;
   margin-right: 11px;
 }
-
-

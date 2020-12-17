@@ -1,12 +1,40 @@
 .academy-logo {
+  @include link-reset;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  padding-top: 22px;
+
+  @media (min-width: $medium-viewport-width) {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 0;
+    max-width: 30%;
+  }
+}
+
+.academy-logo:hover path {
+  fill: $color-primary;
+}
+
+.academy-logo:active {
+  opacity: 0.3;
 }
 
 .academy-logo__text {
-  @include link-reset;
   @include text-secondary;
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+  padding-top: 1px;
   font-size: 16px;
+
+  @media (min-width: $medium-viewport-width) {
+    align-self: center;
+    margin-right: 22px;
+    padding-top: 0;
+  }
 }
 
 .academy-logo__picture {
