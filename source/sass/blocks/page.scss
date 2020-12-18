@@ -26,6 +26,14 @@
   margin-bottom: 0;
 }
 
-.page__header--positioning-custom {
+.page__header--positioning-form {
   margin-bottom: 27px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 62px;
+  }
 }
