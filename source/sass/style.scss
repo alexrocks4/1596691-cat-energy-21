@@ -10,16 +10,20 @@
 //Blocks
 @import "blocks/visually-hidden.scss";
 @import "blocks/wrapper.scss";
+@import "blocks/wrapper-fluid.scss";
 @import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
-@import "blocks/logo.scss";
+@import "blocks/main-logo.scss";
+@import "blocks/secondary-logo.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/nav-toggle.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/academy-logo.scss";
 @import "blocks/socials.scss";
+@import "blocks/br.scss";
 
 //Index page specific blocks
 @import "blocks/promo.scss";

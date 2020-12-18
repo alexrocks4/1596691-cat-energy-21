@@ -1,19 +1,39 @@
-.page-main {
-  outline: $outline-debug;
-}
-
 .page-main--positioning-form {
   margin-bottom: 32px;
 }
 
 .page-main__promo {
   margin-bottom: 22px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 136px;
+  }
 }
 
 .page-main__features {
   margin-bottom: 27px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-main__how-it-works {
   margin-bottom: 42px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 11px;
+  }
 }

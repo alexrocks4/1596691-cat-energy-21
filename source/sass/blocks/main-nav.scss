@@ -2,12 +2,44 @@
   text-transform: uppercase;
 
   @media (min-width: $medium-viewport-width) {
-    width: 440px;
+    width: 64%;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
-  @media (min-width: $medium-viewport-width) {
-    width: 478px;
+  @media (min-width: $large-viewport-width) {
+    padding-left: 40px;
+    min-width: 478px;
+    max-width: 40%;
+    line-height: 30px;
+    color: $color-light-light;
+    font-size: 20px;
+    font-weight: 400;
   }
+}
+
+//For hiding horizontal scroll due to negative margin in main-nav__list
+.main-nav__list-container {
+  @media (min-width: $medium-viewport-width) {
+    overflow: hidden;
+  }
+}
+
+.main-nav--opened .main-nav__item {
+  display: block;
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
+
+  @media (min-width: $medium-viewport-width) {
+    display: block;
+  }
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
 
 .main-nav__list {
@@ -17,10 +49,72 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-right: -34px;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $color-light-accent;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 16px;
+    margin-right: 34px;
+    border-bottom: none;
+    max-width: 37%;
+
+    &:nth-child(2) {
+      margin-right: 36px;
+    }
+  }
+
+  @media (min-width: $large-viewport-width) {
+    &:first-child {
+      margin-right: 37px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 33px;
+    }
+  }
+}
+
+.main-nav__item--active {
+  @media (min-width: $medium-viewport-width) {
+    border-bottom: 2px solid $color-primary;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    border-bottom: 2px solid $color-light-light;
   }
 }
 
 .main-nav__link {
   @include link-reset;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  text-align: center;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 0;
+    padding-bottom: 8px;
+    text-align: left;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding-bottom: 6px;
+  }
+}
+
+.main-nav__item:not(.main-nav__item--active) .main-nav__link {
+  @media (min-width: $medium-viewport-width) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

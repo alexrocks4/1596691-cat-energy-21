@@ -1,0 +1,68 @@
+.wrapper-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  width: (($small-viewport-width - $small-viewport-padding * 2) / $small-viewport-width * 100%);
+  min-width: $small-viewport-width - $small-viewport-padding * 2;
+
+  @media (min-width: $medium-viewport-width) {
+    width: (($medium-viewport-width - $medium-viewport-padding * 2) / $medium-viewport-width * 100%);
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: (($large-viewport-width - $large-viewport-padding * 2) / $large-viewport-width * 100%);
+    max-width: $extra-large-viewport-width - $large-viewport-padding * 2;
+  }
+}
+
+.wrapper-fluid--small-viewport-only {
+  @media (min-width: $medium-viewport-width) {
+    @include clear-wrapper-fluid;
+  }
+}
+
+.wrapper-fluid--medium-viewport-only {
+  @include clear-wrapper-fluid;
+
+  @media (min-width: $medium-viewport-width) {
+    @include clear-wrapper-fluid;
+    margin-left: auto;
+    margin-right: auto;
+    width: (($medium-viewport-width - $medium-viewport-padding * 2) / $medium-viewport-width * 100%);
+  }
+
+  @media (min-width: $large-viewport-width) {
+    @include clear-wrapper-fluid;
+  }
+}
+
+.wrapper-fluid--greater-small-viewport {
+  @include clear-wrapper-fluid;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: (($medium-viewport-width - $medium-viewport-padding * 2) / $medium-viewport-width * 100%);
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: (($large-viewport-width - $large-viewport-padding * 2) / $large-viewport-width * 100%);
+    max-width: $extra-large-viewport-width - $large-viewport-padding * 2;
+  }
+}
+
+.wrapper-fluid--lower-large-viewport {
+  @media (min-width: $large-viewport-width) {
+    @include clear-wrapper-fluid;
+  }
+}
+
+.wrapper-fluid--greater-large-viewport {
+  @include clear-wrapper-fluid;
+
+  @media (min-width: $large-viewport-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: (($large-viewport-width - $large-viewport-padding * 2) / $large-viewport-width * 100%);
+    max-width: $extra-large-viewport-width - $large-viewport-padding * 2;
+  }
+}

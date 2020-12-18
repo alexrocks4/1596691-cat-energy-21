@@ -1,3 +1,119 @@
+.socials {
+  overflow: hidden;
+  border-bottom: 1px solid $color-light-dark;
+
+  @media (min-width: $medium-viewport-width) {
+    border-bottom: none;
+    max-width: 30%;
+  }
+}
+
+.socials__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: -37px;
+  padding-top: 21px;
+  padding-bottom: 13px;
+
+  @media (min-width: $medium-viewport-width) {
+    align-items: center;
+    margin-right: -28px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.socials__item {
+  margin-bottom: 5px;
+  margin-right: 37px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 28px;
+  }
+}
+
+.socials__item--vkontakte {
+  position: relative;
+  left: 1px;
+
+  @media (min-width: $medium-viewport-width) {
+    left: 0;
+  }
+}
+
+.socials__item--vkontakte svg {
+  @media (min-width: $medium-viewport-width) {
+    width: 29px;
+    height: 18px;
+  }
+}
+
+.socials__item--instagram {
+  margin-right: 39px;
+  padding-top: 2px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-right: 28px;
+    padding-top: 2px;
+  }
+}
+
+.socials__item--instagram svg {
+  @media (min-width: $medium-viewport-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.socials__item--facebook {
+  position: relative;
+  bottom: 1px;
+  right: 1px;
+  margin-right: 45px;
+
+  @media (min-width: $medium-viewport-width) {
+    bottom: 0;
+    right: 0;
+    margin-right: 37px;
+  }
+}
+
+.socials__item--facebook svg {
+  @media (min-width: $medium-viewport-width) {
+    width: 15px;
+    height: 29px;
+  }
+}
+
+.socials__item svg:first-child {
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+  }
+}
+
+.socials__item svg:nth-child(2) {
+  @media (max-width: $small-viewport-max-width) {
+    display: none;
+  }
+}
+
 .socials__link {
   @include link-reset;
+
+  &:hover:not(.socials__link--facebook) path {
+    fill: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.socials__link--facebook {
+  &:hover path {
+    stroke: $color-primary;
+  }
 }
