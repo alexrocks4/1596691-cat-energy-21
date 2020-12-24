@@ -1,0 +1,27 @@
+.fieldset {
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 0;
+  color: $color-dark;
+}
+
+.fieldset__legend {
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+
+.fieldset__title {
+  display: inline-block;
+  background-color: $color-light-light;
+  vertical-align: baseline;
+  line-height: 26px;
+  color: $color-dark-dark;
+  font-size: 24px;
+
+  @media (min-width: $medium-viewport-width) {
+    line-height: 36px;
+    font-size: 36px;
+  }
+}

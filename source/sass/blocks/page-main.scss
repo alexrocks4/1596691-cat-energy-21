@@ -1,5 +1,13 @@
 .page-main--positioning-form {
   margin-bottom: 32px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__promo {

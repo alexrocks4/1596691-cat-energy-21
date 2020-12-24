@@ -2,6 +2,7 @@
   text-transform: uppercase;
 
   @media (min-width: $medium-viewport-width) {
+    padding-top: 18px;
     width: 64%;
     line-height: 24px;
     font-size: 18px;
@@ -19,10 +20,9 @@
   }
 }
 
-//For hiding horizontal scroll due to negative margin in main-nav__list
-.main-nav__list-container {
-  @media (min-width: $medium-viewport-width) {
-    overflow: hidden;
+.main-nav--no-background {
+  @media (min-width: $large-viewport-width) {
+    color: $color-dark-accent;
   }
 }
 
@@ -40,6 +40,13 @@
 
 .main-nav--nojs .main-nav__item {
   display: block;
+}
+
+//For hiding horizontal scroll due to negative margin in main-nav__list
+.main-nav__list-container {
+  @media (min-width: $medium-viewport-width) {
+    overflow: hidden;
+  }
 }
 
 .main-nav__list {
@@ -89,6 +96,12 @@
   }
 }
 
+.main-nav--no-background .main-nav__item--active {
+  @media (min-width: $large-viewport-width) {
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
 .main-nav__link {
   @include link-reset;
   display: block;
@@ -103,6 +116,12 @@
   }
 
   @media (min-width: $large-viewport-width) {
+    padding-bottom: 6px;
+  }
+}
+
+.main-nav__link--small {
+  @media (min-width: $medium-viewport-width) and (max-width: $medium-viewport-max-width) {
     padding-bottom: 6px;
   }
 }

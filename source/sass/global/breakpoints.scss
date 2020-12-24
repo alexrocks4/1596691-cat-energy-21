@@ -3,4 +3,5 @@ $small-viewport-width: 320px;
 $medium-viewport-width: 768px;
 $large-viewport-width: 1440px;
 $extra-large-viewport-width: 2560px;
-$small-viewport-max-width: 767px;
+$small-viewport-max-width: $medium-viewport-width - 1px;
+$medium-viewport-max-width: $large-viewport-width - 1px;
