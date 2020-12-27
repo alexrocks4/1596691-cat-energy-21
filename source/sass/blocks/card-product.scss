@@ -1,40 +1,76 @@
 .card-product {
-  padding-top: 17px;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 1px solid $color-light-special-4;
+  padding: 0;
+  padding-top: 19px;
   padding-bottom: 24px;
 
+  &:first-of-type {
+    border-top: 1px solid $color-light-special-4;
+  }
+
   @media (min-width: $medium-viewport-width) {
-    padding: 0;
+    border: none;
+    background-image: linear-gradient(to bottom, transparent 81px, $color-light 81px);
+    padding: 8px 37px 40px;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding: 0 38px 39px 40px;
   }
 }
 
 .card-product__wrapper {
   display: grid;
   grid-template-areas:
-    "img title title"
-    "img data data"
-    "action action action";
-  grid-template-columns: 140px 76px 1fr;
+    "img title"
+    "img data"
+    "action action";
+  grid-template-columns: 2fr minmax(140px, 1fr);
   align-items: start;
+  max-width: 400px;
 
   @media (min-width: $medium-viewport-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: stretch;
-    justify-content: flex-end;
-    min-height: 430px;
+    width: 100%;
+    max-width: none;
   }
 }
 
 .card-product__title {
   @include header-reset;
   grid-area: title;
+  padding-bottom: 13px;
   text-transform: uppercase;
   line-height: 20px;
   color: $color-dark-special-1;
 
   @media (min-width: $medium-viewport-width) {
     align-self: center;
+    margin-bottom: 13px;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 16px;
+    line-height: 21px;
+  }
+}
+
+.card-product__title--right {
+  @media (min-width: $large-viewport-width) {
+    padding-right: 3px;
   }
 }
 
@@ -43,11 +79,156 @@
 }
 
 .card-product__img-link {
+  box-sizing: border-box;
   grid-area: img;
+  justify-self: center;
+  margin-bottom: 12px;
+  min-height: 112px;
 
   @media (min-width: $medium-viewport-width) {
     align-self: center;
     order: -1;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.card-product__img-link--pro-chicken-500 {
+  padding-top: 13px;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding-top: 29px;
+  }
+}
+
+.card-product__img-link--pro-chicken-1000 {
+  margin-bottom: 11px;
+  padding-top: 11px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 25px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 40px;
+    padding-top: 1px;
+  }
+}
+
+.card-product__img-link--pro-chicken-1000 .card-product__img {
+  @media (min-width: $large-viewport-width) {
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      display: inline;
+    }
+  }
+}
+
+.card-product__img-link--pro-fish-500 {
+  padding-top: 27px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 33px;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 42px;
+    padding-top: 27px;
+  }
+}
+
+.card-product__img-link--pro-fish-1000 {
+  padding-top: 11px;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    display: block;
+    margin-bottom: 46px;
+    padding-top: 1px;
+  }
+}
+
+.card-product__img-link--pro-fish-1000 .card-product__img {
+  @media (min-width: $large-viewport-width) {
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      display: inline;
+    }
+  }
+}
+
+.card-product__img-link--slim-buckwheat-500 {
+  padding-top: 30px;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 29px;
+  }
+}
+
+.card-product__img-link--slim-buckwheat-1000 {
+  padding-top: 13px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 33px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.card-product__img-link--slim-buckwheat-1000 .card-product__img {
+  @media (min-width: $large-viewport-width) {
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      display: inline;
+    }
+  }
+}
+
+.card-product__img-link--slim-rice-500 {
+  padding-top: 24px;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-top: 26px;
+  }
+}
+
+.card-product__img {
+  object-fit: contain;
+
+  &:not(:first-child) {
+    display: none;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    display: none;
+
+    &:nth-child(2) {
+      display: inline;
+    }
   }
 }
 
@@ -55,20 +236,75 @@
   @include list-reset;
   @include text-secondary;
   grid-area: data;
-  line-height: 18px;
+  padding-bottom: 21px;
+  max-width: 200px;
+  line-height: 16px;
   font-size: 12px;
+
+  @media (min-width: $medium-viewport-width) {
+    grid-area: auto;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .card-product__data-row {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  @media (min-width: $medium-viewport-width) {
+    border-bottom: 1px solid $color-light-special-2;
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+}
+
+.card-product__data-row:first-child .card-product__data-value {
+  @media (min-width: $medium-viewport-width) {
+    padding-right: 2px;
+  }
+}
+
+.card-product__data-term {
+  flex-basis: 50px;
+  flex-grow: 1;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+
+  @media (min-width: $medium-viewport-width) {
+    flex-basis: 60px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    padding-left: 0;
+  }
 }
 
 .card-product__data-value {
+  flex-basis: 50px;
+  flex-grow: 1;
   margin: 0;
-  margin-left: auto;
   padding: 0;
+  text-align: right;
+
+  @media (min-width: $medium-viewport-width) {
+    flex-basis: 60px;
+  }
 }
 
 .card-product__order {
