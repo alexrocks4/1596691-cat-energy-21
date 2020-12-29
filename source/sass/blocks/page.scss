@@ -1,8 +1,6 @@
 .page {
-  height: 100%;
-  color: $color-dark-dark;
-
   @include text-primary;
+  height: 100%;
 }
 
 .page__body {
@@ -35,5 +33,17 @@
 
   @media (min-width: $large-viewport-width) {
     margin-bottom: 62px;
+  }
+}
+
+.page__header--positioning-catalog {
+  margin-bottom: 27px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 63px;
   }
 }

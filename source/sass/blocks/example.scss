@@ -183,7 +183,7 @@
 }
 
 .example__term--info {
-  @include text-secondary;
+  @include font-secondary;
   box-sizing: border-box;
   z-index: 1;
   background-color: $color-light-special-1;
@@ -192,6 +192,7 @@
   text-align: center;
   text-transform: lowercase;
   line-height: 12px;
+  color: $color-dark;
   font-size: 12px;
 
   @media (min-width: $medium-viewport-width) {

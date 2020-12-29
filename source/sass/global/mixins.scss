@@ -1,20 +1,28 @@
 //Text
-@mixin text-primary {
-  line-height: 18px;
-  color: $color-dark-dark;
+@mixin font-primary {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
 
-@mixin text-secondary {
-  line-height: 18px;
-  color: $color-dark;
+@mixin font-secondary {
   font-family: "Arial", "Tahoma", sans-serif;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
+}
+
+@mixin text-primary {
+  @include font-primary;
+  line-height: 18px;
+  color: $color-dark-dark;
+  font-size: 16px;
+}
+
+@mixin text-secondary {
+  @include font-secondary;
+  line-height: 18px;
+  color: $color-dark;
+  font-size: 14px;
 }
 
 //Links

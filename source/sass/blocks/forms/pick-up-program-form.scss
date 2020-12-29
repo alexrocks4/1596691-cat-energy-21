@@ -121,12 +121,13 @@
 }
 
 .pick-up-program-form__required-text {
-  @include text-secondary;
+  @include font-secondary;
   margin: 0;
   padding: 0;
   text-align: center;
   line-height: 16px;
   color: $color-dark-dark;
+  font-size: 14px;
 
   @media (min-width: $medium-viewport-width) {
     box-sizing: border-box;

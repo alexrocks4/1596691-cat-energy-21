@@ -103,7 +103,7 @@
     }
 
     &::after {
-      @include text-primary;
+      @include font-primary;
       position: absolute;
       top: 0;
       left: 118px;

@@ -1,17 +1,105 @@
 .card-show-more {
-  padding-top: 26px;
+  position: relative;
+  border-bottom: 1px solid $color-light-special-4;
+  padding-top: 78px;
   padding-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-light-special-5;
+    width: 2px;
+    height: 30px;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-light-special-5;
+    width: 30px;
+    height: 2px;
+    content: "";
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    align-self: end;
+    border: 2px solid $color-light;
+    padding: 159px 35px 36px 36px;
+
+    &::before {
+      top: 50px;
+      height: 60px;
+    }
+
+    &::after {
+      top: 80px;
+      width: 60px;
+    }
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding-top: 157px;
+    padding-bottom: 38px;
+
+    &::before {
+      top: 48px;
+    }
+
+    &::after {
+      top: 78px;
+    }
+  }
+}
+
+.card-show-more__wrapper {
+  max-width: 400px;
+
+  @media (min-width: $medium-viewport-width) {
+    max-width: none;
+  }
 }
 
 .card-show-more__title {
   @include header-reset;
+  margin-bottom: 8px;
   text-transform: uppercase;
+  text-align: center;
   line-height: 20px;
   color: $color-dark-accent;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 23px;
+    line-height: 22px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .card-show-more__text {
-  @include text-secondary;
+  @include font-secondary;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  text-align: center;
   line-height: 16px;
+  color: $color-dark;
   font-size: 12px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 86px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 86px;
+  }
 }

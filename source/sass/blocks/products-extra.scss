@@ -1,3 +1,13 @@
+.products-extra {
+  background-image: linear-gradient(to right, $color-light-light 6.25%, transparent 6.25%),
+    linear-gradient(to bottom, transparent 15px, $color-primary 15px, $color-primary 17px, transparent 17px);
+  background-repeat: no-repeat;
+
+  @media (min-width: $medium-viewport-width) {
+    background-image: linear-gradient(to bottom, transparent 22px, $color-primary 22px, $color-primary 24px, transparent 24px);
+  }
+}
+
 .products-extra__wrapper {
   @media (min-width: $large-viewport-width) {
     display: flex;
@@ -8,18 +18,62 @@
 
 .products-extra__title {
   @include header-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  width: 100%;
   line-height: 24px;
   font-size: 24px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 80px;
+    line-height: 36px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-bottom: 79px;
+  }
+}
+
+.products-extra__title-text {
+  background-color: $color-light-light;
+  padding-right: 22px;
+
+  @media (min-width: $medium-viewport-width) {
+    padding-left: 37px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 38px;
+  }
 }
 
 .products-extra__dataset {
-  @include text-secondary;
+  @include font-secondary;
+  margin-bottom: 38px;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
   width: 100%;
   line-height: 14px;
+  color: $color-dark;
+  font-size: 14px;
+
+  @media (min-width: $medium-viewport-width) {
+    margin-bottom: 68px;
+    line-height: 20px;
+    font-size: 16px;
+  }
 
   @media (min-width: $large-viewport-width) {
+    flex-basis: 895px;
+    flex-grow: 1;
+    margin-bottom: 0;
     margin-right: 80px;
-    width: auto;
   }
 }
 
@@ -27,45 +81,140 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid $color-light-special-2;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 18px;
+
+  &:nth-of-type(2) {
+    border-top: 1px solid $color-light-special-2;
+  }
+
+  @media (min-width: $medium-viewport-width) {
+    border: 1px solid $color-light-special-2;
+    padding: 26px 37px 27px 37px;
+
+    &:not(:nth-of-type(2)) {
+      border-top: none;
+    }
+  }
 
   @media (min-width: $large-viewport-width) {
     display: table-row;
     align-items: normal;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.products-extra__row--smaller {
+  @media (max-width: $small-viewport-max-width) {
+    padding-top: 12px;
+    padding-bottom: 16px;
   }
 }
 
 .products-extra__cell {
   display: block;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $large-viewport-width) {
     display: table-cell;
+    padding: 14px 0 16px;
   }
 }
 
 .products-extra__product-name {
-  @include text-primary;
+  @include font-primary;
+  margin-bottom: 13px;
   width: 100%;
   text-transform: uppercase;
   line-height: 16px;
+  font-size: 16px;
   color: $color-dark-special-1;
 
   @media (min-width: $medium-viewport-width) {
+    margin-bottom: 25px;
     margin-right: auto;
     width: auto;
+    line-height: 20px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: 36.313%;
+  }
+}
+
+.products-extra__product-name--vitamins {
+  @media (max-width: $small-viewport-max-width) {
+    margin-bottom: 9px;
+  }
+}
+
+.products-extra__product-size {
+  margin-bottom: 15px;
+
+  @media (min-width: $medium-viewport-width) {
+    align-self: flex-end;
+    margin-bottom: 22px;
+    margin-right: 49px;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    width: 27.3%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.products-extra__product-size--large {
+  @media (max-width: $small-viewport-max-width) {
+    margin-bottom: 13px;
+    line-height: 20px;
+  }
+}
+
+.products-extra__product-size--positioning-wide {
+  @media (max-width: $medium-viewport-max-width) {
+    margin-right: 59px;
   }
 }
 
 .products-extra__product-price {
+  margin-bottom: 15px;
   margin-left: auto;
 
   @media (min-width: $medium-viewport-width) {
+    align-self: flex-end;
+    margin-bottom: 22px;
     margin-left: 0;
+  }
+
+  @media (min-width: $large-viewport-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 8.939%;
+  }
+}
+
+.products-extra__product-price--vitamins {
+  @media (max-width: $small-viewport-max-width) {
+    margin-bottom: 13px;
+    line-height: 20px;
   }
 }
 
 .products-extra__product-actions {
   width: 100%;
+
+  @media (min-width: $large-viewport-width) {
+    padding-top: 15px;
+    width: 27.374%;
+  }
 }
 
 .products-extra__product-buy {
@@ -73,14 +222,18 @@
 }
 
 .products-extra__bonus {
-  @include text-secondary;
+  @include font-secondary;
+  box-sizing: border-box;
   background-color: $color-primary;
-  background-image: url("../img/icon_gift.svg"),
+  background-image: url("../img/icon-gift.svg"),
     url("../img/gift-photo-mobile.jpg");
   background-position: 50% 58px, 0 0;
   background-repeat: no-repeat;
+  background-size: auto, cover;
   margin: 0;
   padding: 0;
+  padding-top: 188px;
+  padding-right: 2px;
   min-height: 289px;
   width: 100%;
   text-align: center;
@@ -89,31 +242,27 @@
   font-size: 16px;
 
   @media (min-width: $medium-viewport-width) {
-    background-position: 78px 57px, 0 0;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     min-height: 200px;
+    background-image: url("../img/icon-gift-tablet.svg"),
+      url("../img/gift-photo-tablet.jpg");
+    background-position: 78px 57px, 0 0;
+    padding-top: 73px;
+    padding-left: 236px;
+    padding-right: 125px;
+    text-align: left;
   }
 
   @media (min-width: $large-viewport-width) {
-    background-position: 50% 58px, 0 0;
-    text-align: center;
+    display: block;
+    flex-basis: 245px;
     min-height: 289px;
-    width: 245px;
-  }
-}
-
-.products-extra__bonus-text {
-  display: inline-block;
-  margin-top: 186px;
-  width: 161px;
-
-  @media (min-width: $medium-viewport-width) {
-    margin-top: 71px;
-    margin-left: 423px;
-  }
-
-  @media (min-width: $large-viewport-width) {
-    margin-top: 186px;
-    margin-left: 0;
+    background-image: url("../img/icon-gift-tablet.svg"),
+      url("../img/gift-photo-desktop.jpg");
+    background-position: 84px 56px, 0 0;
+    padding: 188px 22px 40px 20px;
+    text-align: center;
   }
 }
