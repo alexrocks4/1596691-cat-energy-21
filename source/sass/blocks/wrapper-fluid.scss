@@ -24,7 +24,6 @@
   @include clear-wrapper-fluid;
 
   @media (min-width: $medium-viewport-width) {
-    @include clear-wrapper-fluid;
     margin-left: auto;
     margin-right: auto;
     width: (($medium-viewport-width - $medium-viewport-padding * 2) / $medium-viewport-width * 100%);
@@ -69,9 +68,6 @@
 
 .wrapper-fluid--medium-viewport-narrow {
   @media (min-width: $medium-viewport-width) and (max-width: $medium-viewport-max-width) {
-    @include clear-wrapper-fluid;
-    margin-left: auto;
-    margin-right: auto;
     width: (($medium-viewport-width - ($medium-viewport-padding + 35px) * 2) / $medium-viewport-width * 100%);
   }
 }

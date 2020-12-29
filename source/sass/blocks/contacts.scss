@@ -72,12 +72,14 @@
 }
 
 .contacts__address {
-  @include text-secondary;
+  @include font-secondary;
   margin: 0;
   margin-right: 5px;
   padding: 0;
   padding-top: 1px;
   line-height: 20px;
+  color: $color-dark;
+  font-size: 14px;
 
   @media (min-width: $medium-viewport-width) {
     margin-right: 0;

@@ -234,11 +234,12 @@
 
 .card-product__data-list {
   @include list-reset;
-  @include text-secondary;
+  @include font-secondary;
   grid-area: data;
   padding-bottom: 21px;
   max-width: 200px;
   line-height: 16px;
+  color: $color-dark;
   font-size: 12px;
 
   @media (min-width: $medium-viewport-width) {

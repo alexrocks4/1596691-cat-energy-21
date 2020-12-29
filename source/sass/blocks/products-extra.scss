@@ -53,13 +53,15 @@
 }
 
 .products-extra__dataset {
-  @include text-secondary;
+  @include font-secondary;
   margin-bottom: 38px;
   border: none;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   line-height: 14px;
+  color: $color-dark;
+  font-size: 14px;
 
   @media (min-width: $medium-viewport-width) {
     margin-bottom: 68px;
@@ -126,11 +128,12 @@
 }
 
 .products-extra__product-name {
-  @include text-primary;
+  @include font-primary;
   margin-bottom: 13px;
   width: 100%;
   text-transform: uppercase;
   line-height: 16px;
+  font-size: 16px;
   color: $color-dark-special-1;
 
   @media (min-width: $medium-viewport-width) {
@@ -219,7 +222,7 @@
 }
 
 .products-extra__bonus {
-  @include text-secondary;
+  @include font-secondary;
   box-sizing: border-box;
   background-color: $color-primary;
   background-image: url("../img/icon-gift.svg"),

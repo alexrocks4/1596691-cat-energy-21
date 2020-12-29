@@ -1,15 +1,24 @@
 .button {
-  @include link-reset;
-  @include text-primary;
+  @include font-primary;
   box-sizing: border-box;
   display: block;
   width: 100%;
   border: none;
-  padding: 11px 26px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--size-default {
+  padding: 11px 26px;
   line-height: 18px;
   font-size: 14px;
+}
+
+.button--size-large {
+  padding: 10px 26px;
+  line-height: 20px;
+  font-size: 16px;
 }
 
 .button--info {
@@ -30,8 +39,3 @@
   }
 }
 
-.button--large {
-  padding: 10px 26px;
-  line-height: 20px;
-  font-size: 16px;
-}

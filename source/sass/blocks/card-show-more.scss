@@ -66,9 +66,7 @@
 
 .card-show-more__title {
   @include header-reset;
-  margin: 0;
   margin-bottom: 8px;
-  padding: 0;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
@@ -86,12 +84,13 @@
 }
 
 .card-show-more__text {
-  @include text-secondary;
+  @include font-secondary;
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
   text-align: center;
   line-height: 16px;
+  color: $color-dark;
   font-size: 12px;
 
   @media (min-width: $medium-viewport-width) {
