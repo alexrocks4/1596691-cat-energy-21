@@ -11,9 +11,11 @@
       <div class="page-header__container">
         <div class="page-header__wrapper page-header__wrapper--nojs wrapper-fluid wrapper-fluid--small-viewport-only">
           <a class="page-header__main-logo main-logo" href="index.html" aria-label="Главная">
-            <img class="main-logo__picture" src="./img/logo-picture-mobile.svg" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
-            <img class="main-logo__picture" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
-            <img class="main-logo__picture" src="./img/logo-desktop.svg" width="202" height="59" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-logo__picture" src="img/logo-picture-mobile.svg" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
+            </picture>
           </a>
           <a class="page-header__secondary-logo secondary-logo" href="index.html" aria-label="Главная">
             <img class="secondary-logo__text" src="./img/logo-text.svg"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
