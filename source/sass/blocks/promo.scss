@@ -27,6 +27,12 @@
   background-repeat: no-repeat, no-repeat;
   padding-top: 27px;
 
+  @media (min-resolution: 2dppx) and (max-width: $small-viewport-max-width) {
+    background-image: linear-gradient(to bottom, $color-primary-dark 0, $color-primary-dark 302px, $color-light-light 302px),
+      url("../img/index-background-small@2x.jpg");
+    background-size: 100%, 320px auto;
+  }
+
   @media (min-width: $medium-viewport-width) {
     position: relative;
     background: none;
@@ -82,43 +88,21 @@
 .promo__img {
   margin-bottom: 3px;
 
-  &:first-of-type {
-    @media (min-width: $medium-viewport-width) {
-      display: none;
-    }
-  }
-
-  &:nth-of-type(2) {
-    display: none;
-
-    @media (min-width: $medium-viewport-width) {
-      display: block;
-    }
-
-    @media (min-width: $large-viewport-width) {
-      display: none;
-    }
-  }
-
-  &:nth-of-type(3) {
-    display: none;
-
-    @media (min-width: $large-viewport-width) {
-      display: block;
-    }
-  }
-
   @media (min-width: $medium-viewport-width) {
     position: absolute;
     bottom: 0;
     left: 29px;
     z-index: -1;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $large-viewport-width) {
     top: 0;
     left: auto;
     right: 330px;
+    width: 552px;
+    height: 499px;
   }
 }
 

@@ -12,11 +12,18 @@
 
 .page__body--decorated {
   @media (min-width: $large-viewport-width) {
-    background-image: linear-gradient(to right, transparent 0, transparent 50%, $color-primary-dark 50%, $color-primary-dark),
+    background-image: linear-gradient(to bottom, transparent 694px, $color-light-light 694px),
+      linear-gradient(to right, transparent 50%, $color-primary-dark 50%),
       url("../img/index-background-desktop.jpg");
-    background-position: 0 0, right top;
+    background-position: 0 0, 0 0, right top;
     background-repeat: no-repeat;
-    background-size: auto 694px, 50% 694px;
+    background-size: auto, auto, 50% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, transparent 694px, $color-light-light 694px),
+        linear-gradient(to right, transparent 50%, $color-primary-dark 50%),
+        url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
