@@ -61,24 +61,13 @@
 
 .slider__img {
   object-fit: contain;
-
-  &:last-of-type {
-    display: none;
-  }
-
-  @media (min-width: $medium-viewport-width) {
-    &:first-of-type {
-      display: none;
-    }
-
-    &:last-of-type {
-      display: inline-block;
-    }
-  }
 }
 
 .slider__img-before {
-  &:last-of-type {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $medium-viewport-width) {
     position: relative;
     left: 16px;
     width: 677px;
@@ -87,14 +76,14 @@
 }
 
 .slider__img-after {
-  &:last-of-type {
-    width: 545px;
-    height: 520px;
-  }
+  width: 251px;
+  height: 240px;
 
   @media (min-width: $medium-viewport-width) {
     position: relative;
     right: 100%;
+    width: 545px;
+    height: 520px;
   }
 
   @media (min-width: $large-viewport-width) {
