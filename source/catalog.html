@@ -11,9 +11,11 @@
       <div class="page-header__container">
         <div class="page-header__wrapper page-header__wrapper--nojs wrapper-fluid wrapper-fluid--small-viewport-only">
           <a class="page-header__main-logo main-logo" href="index.html" aria-label="Главная">
-            <img class="main-logo__picture" src="./img/logo-picture-mobile.svg" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
-            <img class="main-logo__picture" src="./img/logo-tablet.svg" width="174" height="52" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
-            <img class="main-logo__picture" src="./img/logo-desktop.svg" width="202" height="59" alt="Логотип. Слева изображение бело-красного кота на зеленом фоне. Справа надпись cat energy большими буквами черного цвета на белом фоне.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-logo__picture" src="img/logo-picture-mobile.svg" width="34" height="38" alt="Логотип. Изображение бело-красного кота на зеленом фоне.">
+            </picture>
           </a>
           <a class="page-header__secondary-logo secondary-logo" href="index.html" aria-label="Главная">
             <img class="secondary-logo__text" src="./img/logo-text.svg"  width="101" height="18" alt="Текстовый логотип. Надпись cat energy большими буквами черного цвета на белом фоне.">
@@ -51,8 +53,10 @@
               <a class="card-product__title-link" href="#">Cat Energy<br class="br br--small-viewport-only"> PRO<br class="br br--greater-medium-viewport"> 500 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--pro-chicken-500" href="#" aria-label="Cat Energy PRO 500 г">
-              <img class="card-product__img" src="img/cat-energy-pro-chicken-500-mobile.jpg" width="68" height="86" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
-              <img class="card-product__img" src="img/cat-energy-pro-chicken-500-tablet.png" width="161" height="172" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-chicken-500-tablet.png 1x, img/cat-energy-pro-chicken-500-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-pro-chicken-500-mobile.jpg" srcset="img/cat-energy-pro-chicken-500-mobile@2x.jpg 2x" width="68" height="86" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -77,9 +81,11 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> PRO<br class="br br--greater-medium-viewport"> 1000 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--pro-chicken-1000" href="#" aria-label="Cat Energy PRO 1000 г">
-              <img class="card-product__img" src="img/cat-energy-pro-chicken-1000-mobile.jpg" width="84" height="101" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
-              <img class="card-product__img" src="img/cat-energy-pro-chicken-1000-tablet.png" width="168" height="207" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
-              <img class="card-product__img" src="img/cat-energy-pro-chicken-1000-desktop.png" width="172" height="202" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-chicken-1000-desktop.png 1x, img/cat-energy-pro-chicken-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-chicken-1000-tablet.png 1x, img/cat-energy-pro-chicken-1000-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-pro-chicken-1000-mobile.jpg" srcset="img/cat-energy-pro-chicken-1000-mobile@2x.jpg 2x" width="84" height="101" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro курица.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -104,8 +110,10 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> PRO<br class="br br--greater-medium-viewport"> 500 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--pro-fish-500" href="#" aria-label="Cat Energy PRO 500 г">
-              <img class="card-product__img" src="img/cat-energy-pro-fish-500-mobile.jpg" width="68" height="78" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
-              <img class="card-product__img" src="img/cat-energy-pro-fish-500-tablet.png" width="163" height="174" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-500-tablet.png 1x, img/cat-energy-pro-fish-500-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-pro-fish-500-mobile.jpg" srcset="img/cat-energy-pro-fish-500-mobile@2x.jpg 2x" width="68" height="78" alt="Упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -130,9 +138,11 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> PRO<br class="br br--greater-medium-viewport"> 1000 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--pro-fish-1000" href="#" aria-label="Cat Energy PRO 1000 г">
-              <img class="card-product__img" src="img/cat-energy-pro-fish-1000-mobile.jpg" width="84" height="101" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
-              <img class="card-product__img" src="img/cat-energy-pro-fish-1000-tablet.png" width="168" height="200" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
-              <img class="card-product__img" src="img/cat-energy-pro-fish-1000-desktop.png" width="172" height="196" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-fish-1000-desktop.png 1x, img/cat-energy-pro-fish-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-1000-tablet.png 1x, img/cat-energy-pro-fish-1000-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-pro-fish-1000-mobile.jpg" srcset="img/cat-energy-pro-fish-1000-mobile@2x.jpg 2x" width="84" height="101" alt="Большая упаковка сухого корма красно-оранжевого цвета с надписью Cat Energy Pro рыба.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -157,8 +167,10 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> slim<br class="br br--greater-medium-viewport"> 500 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--slim-buckwheat-500" href="#" aria-label="Cat Energy slim 500 г">
-              <img class="card-product__img" src="img/cat-energy-slim-buckwheat-500-mobile.jpg" width="68" height="78" alt="Упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
-              <img class="card-product__img" src="img/cat-energy-slim-buckwheat-500-tablet.png" width="161" height="171" alt="Упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-energy-slim-buckwheat-500-tablet.png 1x, img/cat-energy-slim-buckwheat-500-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-slim-buckwheat-500-mobile.jpg" srcset="img/cat-energy-slim-buckwheat-500-mobile@2x.jpg 2x" width="68" height="78" alt="Упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -183,9 +195,11 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> slim<br class="br br--greater-medium-viewport"> 1000 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--slim-buckwheat-1000" href="#" aria-label="Cat Energy slim 1000 г">
-              <img class="card-product__img" src="img/cat-energy-slim-buckwheat-1000-mobile.jpg" width="84" height="100" alt="Большая упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
-              <img class="card-product__img" src="img/cat-energy-slim-buckwheat-1000-tablet.png" width="168" height="200" alt="Большая упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
-              <img class="card-product__img" src="img/cat-energy-slim-buckwheat-1000-desktop.png" width="172" height="196" alt="Большая упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-slim-buckwheat-1000-desktop.png 1x, img/cat-energy-slim-buckwheat-1000-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-slim-buckwheat-1000-tablet.png 1x, img/cat-energy-slim-buckwheat-1000-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-slim-buckwheat-1000-mobile.jpg" srcset="img/cat-energy-slim-buckwheat-1000-mobile@2x.jpg 2x" width="84" height="100" alt="Большая упаковка сухого корма голубого цвета с надписью Cat Energy Pro гречка.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
@@ -210,8 +224,10 @@
               <a class="card-product__title-link" href="#">Cat Energy <br class="br br--small-viewport-only"> slim<br class="br br--greater-medium-viewport"> 500 г</a>
             </h3>
             <a class="card-product__img-link card-product__img-link--slim-rice-500" href="#" aria-label="Cat Energy slim 500 г">
-              <img class="card-product__img" src="img/cat-energy-slim-rice-500-mobile.jpg" width="72" height="84" alt="Упаковка сухого корма синего цвета с надписью Cat Energy Pro рис.">
-              <img class="card-product__img" src="img/cat-energy-slim-rice-500-tablet.png" width="163" height="174" alt="Упаковка сухого корма синего цвета с надписью Cat Energy Pro рис.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-energy-slim-rice-500-tablet.png 1x, img/cat-energy-slim-rice-500-tablet@2x.png 2x">
+                <img class="card-product__img" src="img/cat-energy-slim-rice-500-mobile.jpg" srcset="img/cat-energy-slim-rice-500-mobile@2x.jpg 2x" width="72" height="84" alt="Упаковка сухого корма синего цвета с надписью Cat Energy Pro рис.">
+              </picture>
             </a>
             <dl class="card-product__data-list">
               <div class="card-product__data-row">
