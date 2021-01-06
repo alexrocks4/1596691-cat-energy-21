@@ -45,9 +45,9 @@
 
   &::before {
     margin-right: 20px;
-    background-position: 0 0;
+    background-color: $color-primary;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 60px 60px;
     width: 60px;
     height: 60px;
     content: "";
@@ -55,18 +55,24 @@
 
   &:first-child::before {
     background-image: url("../img/icon-leaf.svg");
+    background-size: 25px 28px;
   }
 
   &:nth-child(2)::before {
     background-image: url("../img/icon-hot-water.svg");
+    background-position: 15px 13px;
+    background-size: 29px 31px;
   }
 
   &:nth-child(3)::before {
     background-image: url("../img/icon-eat.svg");
+    background-size: 25px 30px;
   }
 
   &:nth-child(4)::before {
     background-image: url("../img/icon-clock.svg");
+    background-position: top 15px left 17px;
+    background-size: 25px 30px;
   }
 
   &:not(:last-child) {
@@ -81,25 +87,13 @@
 
     &::before {
       margin-bottom: 31px;
-      background-size: 80px 80px;
       width: 80px;
       height: 80px;
     }
 
-    &:first-child::before {
-      background-image: url("../img/icon-leaf-medium.svg");
-    }
-
-    &:nth-child(2)::before {
-      background-image: url("../img/icon-hot-water-medium.svg");
-    }
-
-    &:nth-child(3)::before {
-      background-image: url("../img/icon-eat-medium.svg");
-    }
-
+    &:nth-child(2)::before,
     &:nth-child(4)::before {
-      background-image: url("../img/icon-clock-medium.svg");
+      background-position: center;
     }
 
     &::after {
