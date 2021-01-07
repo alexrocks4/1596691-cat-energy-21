@@ -14,7 +14,7 @@
   }
 }
 
-.academy-logo:hover path {
+.academy-logo:hover .academy-logo__picture {
   fill: $color-primary;
 }
 
@@ -41,4 +41,7 @@
 
 .academy-logo__picture {
   margin-left: auto;
+  width: 27px;
+  height: 34px;
+  fill: $color-light-special-11;
 }
