@@ -229,7 +229,7 @@
     url("../img/gift-photo-mobile.jpg");
   background-position: 50% 58px, 0 0;
   background-repeat: no-repeat;
-  background-size: auto, cover;
+  background-size: 78px 80px, cover;
   margin: 0;
   padding: 0;
   padding-top: 188px;
@@ -251,16 +251,17 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     min-height: 200px;
-    background-image: url("../img/icon-gift-tablet.svg"),
+    background-image: url("../img/icon-gift.svg"),
       url("../img/gift-photo-tablet.jpg");
     background-position: 78px 57px, 0 0;
+    background-size: 80px 83px, cover;
     padding-top: 73px;
     padding-left: 236px;
     padding-right: 125px;
     text-align: left;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-gift-tablet.svg"),
+      background-image: url("../img/icon-gift.svg"),
         url("../img/gift-photo-tablet@2x.jpg");
     }
   }
@@ -269,14 +270,14 @@
     display: block;
     flex-basis: 245px;
     min-height: 289px;
-    background-image: url("../img/icon-gift-tablet.svg"),
+    background-image: url("../img/icon-gift.svg"),
       url("../img/gift-photo-desktop.jpg");
     background-position: 84px 56px, 0 0;
     padding: 188px 22px 40px 20px;
     text-align: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/icon-gift-tablet.svg"),
+      background-image: url("../img/icon-gift.svg"),
         url("../img/gift-photo-desktop@2x.jpg");
     }
   }
