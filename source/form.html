@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи - подбор питания для котов</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -123,9 +125,10 @@
               <legend class="fieldset__legend fieldset-comments__legend">
                 <span class="fieldset__title fieldset-comments__title">Комментарий</span>
               </legend>
-              <div class="fieldset-comments__input-container">
+              <label class="fieldset-comments__label">
+                <span class="visually-hidden">Расскажите обо всех повадках кота</span>
                 <textarea class="fieldset-comments__input" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </div>
+              </label>
             </fieldset>
           </div>
         </div>
@@ -179,7 +182,7 @@
             <address class="contacts__address">ул. Большая<br> Конюшенная, д.&nbsp;19/8<br><br class="br br--greater-medium-viewport"> Санкт-Петербург</address>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300269!2d30.32085871554911!3d59.93871916905486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1605521852848!5m2!1sru!2sua" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта расположения офиса"></iframe>
       </section>
       <div class="page-footer__secondary wrapper-fluid">
         <p class="page-footer__logo">
