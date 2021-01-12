@@ -23,7 +23,9 @@
   }
 }
 
-.fieldset-comments__input-container {
+.fieldset-comments__label {
+  display: block;
+
   @media (min-width: $medium-viewport-width) {
     padding-left: 5px;
     padding-right: 2px;
